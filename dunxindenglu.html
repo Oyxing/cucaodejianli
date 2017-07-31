@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>短信登录</title>
+		<style type="text/css">
+		 *{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+				color: black;
+			}
+			#top{
+				width: 100%;
+				height: 80px;
+				border-bottom: 10px solid #EFEFEF;
+			}
+			#top #top1{
+				width: 1000px;
+				height: 80px;
+				margin: 0 auto;				
+			}
+			#top #top1 #top2{
+				width: 150px;
+				height: 50px;
+				margin-top: 20px;
+				float: left;				
+			}
+			#top #top1 #top3{
+			   width: 170px;
+				height: 50px;
+				margin-top: 20px;
+				float: left;
+				background: url(img/pp1.png) no-repeat 0px -119px;
+				margin-left: 20px;	
+			}
+			#top #top1 ul{
+				width: 240px;
+				height: 30px;
+				float: left;
+				margin-left: 415px;
+				margin-top: 40px;
+			}
+			#top #top1 .jz{
+				width: 80px;
+				height: 30px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				color: #666666;
+				text-align: center;
+				line-height: 30px;
+				float: left;				
+			}
+			#top #top1 .jz:hover{
+				text-decoration: underline;
+				color: blue;
+			}
+			#banner{
+				width: 100%;
+				height: 379px;
+				background: url(img/ppbanner.jpg) -345px 0px;
+				padding-top: 30px;
+			}
+			#banner #denglu{
+				width: 440px;
+				height: 345px;
+				background-color: white;
+				margin-left: 700px;
+			}
+			#banner #denglu #dl{
+				width: 440px;
+				height: 40px;
+				background-color: #F3F3F5;
+				border-bottom: 1px solid #CACACC;
+				font-family: "微软雅黑";
+				font-size: 16px;
+				line-height: 40px;
+				text-indent: 20px;
+			}
+			#banner #denglu .mm{
+				width: 109px;
+				height: 40px;
+				float: left;
+				text-indent: 35px;
+				border-bottom: 1px solid #DCDCDE;
+				border-right: 1px solid #DCDCDE;
+				line-height: 40px;
+				font-size: 14px;
+				cursor: pointer;
+			}
+			#banner #denglu .mm .tu{
+				width: 19px;
+				height: 19px;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			#banner #denglu .dl1{
+				background:#EDEEF0 url(img/mima1.png) no-repeat 10px 12px;
+				color: #666666;
+			}
+			#banner #denglu .dl2{
+				background: #EDEEF0 url(img/ppyijiandenglu.png) no-repeat 10px 12px;
+				color: #666666;
+			}		
+			
+			#banner #denglu .dl3{				
+				background:#EDEEF0 url(img/pperweima.png) no-repeat 10px 12px;
+				color: #666666;
+			}
+			#banner #denglu .dl4{
+				background:  url(img/duanxindenglu1.png) no-repeat 10px 12px;
+				
+				border-bottom: 1px solid white;
+			}
+			#banner #denglu #zh{
+				width: 270px;
+				height: 40px;
+				border: 1px solid #DCDCDE;
+				border-radius: 5px;
+				margin-top: 20px;
+				margin-left: 85px;
+				background: url(img/ppzhanghao.png) no-repeat 0px 3px;
+				text-indent: 35px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			#banner #denglu #mm{
+				width: 140px;
+				height: 40px;
+				border: 1px solid #DCDCDE;
+				border-radius: 5px;
+				margin-top: 10px;
+				margin-left: 85px;
+				background: url(img/ppmima.png) no-repeat 0px 3px;
+				text-indent: 35px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				cursor: pointer;
+				float: left;
+			}
+			#banner #denglu #yz{
+				width: 120px;
+				height: 40px;
+				border: 1px solid #DCDCDE;
+				border-radius: 5px;
+				margin-top: 10px;
+				margin-left: 20px;
+				background:#EDEEF0;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				cursor: pointer;
+				float: left;
+				text-align: center;
+				
+			}
+			#banner #denglu #yhm{
+				font-family: "微软雅黑";
+				font-size: 14px;
+				margin-top: 10px;
+				margin-left: 265px;
+				float: left;
+			}
+			#banner #denglu #yhm #jzhym{
+				margin-right: 5px;
+			}
+			#banner #denglu #denglu1{
+				width: 270px;
+				height: 40px;
+				border: 1px solid #DCDCDE;
+				border-radius: 5px;
+				margin-top: 10px;
+				margin-left: 85px;
+				background-color: #1765B7;
+                text-align: center;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				font-size: 20px;
+				color: white;
+				cursor: pointer;
+			}
+			#banner #denglu #zhanghao{
+				width: 300px;
+				height: 40px;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color: #66666;
+				margin-top: 30px;
+				margin-left: 100px;
+			}
+			#banner #denglu #zhanghao .zhuce:hover{
+				text-decoration: underline;
+			}
+			#neirong{
+				width: 1000px;
+				height: 150px;
+                margin: 0 auto;
+                margin-top: 35px;
+                border-bottom: 2px solid #EFEFEF;				
+			}
+			#neirong .aqjb{
+				width: 190px;
+				height: 147px;
+				background-color: white;
+				border: 1px solid #E7E7E7;
+				float: left;
+			}
+			#neirong .aqjb .jibie{
+				width: 190px;
+				height: 45px;
+				background-color: yellow;
+				margin-top: 40px;
+				background:url(img/ppzhanjb.png) no-repeat 10px 0px;
+				text-indent: 43px;
+				line-height: 45px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+			}
+			#neirong .aqjb .tx{
+				background:url(img/ppyszbzh.png) no-repeat -6px 0px;
+				text-indent: 43px;
+			}
+			#neirong .aqjb:hover{
+				background-color: #F4F4F6;
+			}
+			#neirong .aqjb .jibie1{
+				margin-left: 5px;
+				margin-top: 10px;
+				font-size: 12px;
+				color: #888888;
+				line-height: 1.5em;
+			}
+			#bottm{
+				width: 100%;
+				height: 100px;
+				border-top: 1px solid #EDEDED;
+				margin-top: 50px;
+			}
+			#bottm #bottm1{
+				width: 1000px;
+				height: 100px;
+				margin: 0 auto;
+			}
+			#bottm #bottm1 #bottm-left{
+				width: 505px;
+				height: 55px;
+				margin-top: 30px;
+				float: left;
+			}
+			#bottm #bottm1 #bottm-left p{
+				font-family: "微软雅黑";
+				font-size: 12px;
+				line-height: 1.5em;
+			}
+			#bottm #bottm1 #bottm-right{
+				width: 320px;
+				height: 55px;
+				margin-top: 30px;
+				float: left;
+				margin-left: 120px;
+			}
+			#bottm #bottm1 #bottm-right #right1{
+				width: 115px;
+				height: 50px;
+				float: left;
+			}
+			#bottm #bottm1 #bottm-right #right1 img{
+				width: 115px;
+				height: 50px;
+			}
+			#bottm #bottm1 #bottm-right #right2{
+				width: 32px;
+				height: 35px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			#bottm #bottm1 #bottm-right #right3{
+				width: 133px;
+				height: 55px;
+				float: left;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+	<head>		
+	<div id="top">
+		<div id="top1">
+			<div id="top2"><img src="img/dllogo.jpg"/></div>
+			<div id="top3"></div>
+			<ul>
+				<a href="#"><li class="jz">家长监控&nbsp;&nbsp;&nbsp;|</li></a>
+				<a href="#"><li class="jz">我要举报&nbsp;&nbsp;&nbsp;|</li></a>
+				<a href="#"><li class="jz">帐号找回&nbsp;&nbsp;&nbsp;</li></a>
+			</ul>			
+		</div>	
+	</div>
+	</head>	
+    <body>
+    	<div id="banner">
+    	<div id="denglu">
+    		<p id="dl">欢迎登录世纪天成</p>
+    		<ul>
+    			<a href="mimadenglu.html"><li class="mm dl1">密码登录</li></a>	
+    			<a href="yijiandenglu.html"><li class="mm dl2">一键登录</li></a>
+    			<a href="erweimadenglu.html"><li class="mm dl3">二维码</li></a>
+    			<a href="dunxindenglu.html"><li class="mm dl4">短信登录</li></a>
+    		</ul>
+    	    <form action="#" method="get">
+    	    	<input type="text" id="zh" placeholder="手机/邮箱/普通帐号" />
+    	    	<input type="text" id="mm" placeholder="输入六位验证码" />
+    	    	<input type="text" id="yz" value="免费获取验证码" />
+    	    	<p id="yhm"><input type="checkbox"  id="jzhym" />记住用户名</p>
+    	    	<input type="submit" id="denglu1" value="登录"/>
+    	    </form>
+    	    <p id="zhanghao">还没有世纪天成账号？ <a href="#" class="zhuce">立即注册</a> | <a href="#" class="zhuce">忘记密码</a></p>
+    	</div>	
+        <div id="neirong">
+        	<a href="#"><div class="aqjb">
+        		<div class="jibie">帐号安全级别</div>
+        		<p class="jibie1">您的账号是否够安全？拖动试试看。</p>	       		
+        	</div>
+        	</a>
+        	<a href="#"><div class="aqjb">
+        		<div class="jibie tx">账户保护提醒服务</div>
+        		<p class="jibie1">开通手机密保，享受及时的短信通知服务。</p>	       		
+        	</div>
+        	</a>
+        	<a href="#"><div class="aqjb">
+        		<div class="jibie ys">遗失装备找回</div>
+        		<p class="jibie1">账号丢失？装备被交易？快来使用装备找回功能。</p>	       		
+        	</div>
+        	</a>
+        	<a href="#"><div class="aqjb">
+        		<div class="jibie cl">处理进度查询</div>
+        		<p class="jibie1">可查看所有提交客服处理的工单进度。</p>	       		
+        	</div>
+        	</a>
+        	<a href="#"><div class="aqjb">
+        		<div class="jibie lx">联系在线客服</div>
+        		<p class="jibie1">在线客服人员将为您提供相应的帮助。</p>	       		
+        	</div>
+        </a>      
+        </div>
+   <footer>
+   	   <div id="bottm">
+   	   	 <div id="bottm1">
+   	   	 	<div id="bottm-left">
+   	   	 		<p>网络实名：世纪天成 | 上海邮通科技有限公司 版权所有 | 24小时客户热线：021-34144567</p>
+   	   	 	    <p>上海市徐汇区钦州北路1066号74号楼3楼. 邮编：200233 </p>
+   	   	 	    <p>Copyright © 2017 Shanghai Posts & Telecommunications Technology CO.,LTD.</p>
+   	   	 	</div>
+   	   	 	<div id="bottm-right">
+   	   	 		<a href="#"><div id="right1" title="网络社会征信网"><img src="img/ppzxw.gif"/></div></a>
+   	   	 		<div id="right2"><img src="img/db3.png"/></div>
+   	   	 		<div id="right3">
+   	   	 			<p>沪网文[2016]0095-095</p>
+   	   	 			<p>沪ICP证B2-20040070</p>
+   	   	 			<p>新出网证(沪)字017号</p>
+   	   	 		</div>	
+   	   	 			
+   	   	 		
+   	   	 	</div>
+   	   	 </div>
+   	   </div>
+   </footer>
+    </body>
+	</body>
+</html>

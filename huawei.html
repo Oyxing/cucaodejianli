@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<style type="text/css">
+			*{padding: 0;margin: 0;list-style: none;text-decoration: none;color: black;}
+			#quanbu{width: 1365px;height: 100%;}
+			body{background-color: #F5F5F5;}
+			
+			#box{width: 1365px;background-color:#F5F5F5;}
+			
+			.yvyue{margin: 0 auto;display: block;}
+			.yvyue img{width: 100%;height: 90px;display: block;}
+			.yvyue #quxiao:hover .yvyue{display:none;}
+			
+			#top{width: 100%;height: 25px;background-color:white;}
+			#topyou{width:445px;height: 25px;margin-left: 70px;}
+			#topyou ul li{float: left;color: #8C8C8F;line-height:25px;width:80px;color: black;height: 25px;font-size: 15px;text-align: center;}
+			#topyou ul li a:hover{color:coral;}
+			.ruanjian1{ left;line-height:25px; width:80px;height: 25px; font-size: 15px; color: #8C8C8Ftext-align: center;display:none;}
+			.ruanjian:hover .ruanjian1{display: block;color: red;background-color:white;}
+			.ruanjian:hover{color: #8C8C8F;}
+			
+			#topyou ul li a{color:#ACC1C1;}
+			#topzuo{ width:363px;height: 25px;margin-left: 859px;margin-top: -25px;}
+			#topzuo ul li{float: left;line-height:25px;width:80px;height: 25px;font-size: 13px;text-align: center;}
+			#topzuo ul li a:hover{color:coral;}
+			#ruanjian2{color: black;}
+			#topzuo ul li a{color:#ACC1C1;}
+			#fuqi{z-index: 10;margin-left: -16px;}
+			#huaweitop{width: 100%;height: 110px;background-color: white;margin-top: 3px;}
+			#huaweitu{width: 240px;height: 112px;margin-left: 80px;background: url(img/logo20161214211126.png);}
+			#sousuo{width:394px ;height: 38px;position: absolute;float: left;left: 500px;top: 155px;}
+			#sousuotu{float: left;left: 900px;top: 155px;width: 40px;position: absolute;height:40px;background-color: white;}
+			#sousuotu img{width: 30px;height: 20px;margin-top: 10px;}
+			#sousuotu:hover{background-color: whitesmoke;}
+			#sousuokuang{width: 398px;height: 42px;}
+			#sousuokuang:active{display: none;}
+			#shang{width:99px;height: 38px;position: absolute;float: left;left: 975px;top: 155px;}
+			#shang a{line-height:48px;font-size: 17px;color: black;}
+			.nev{font-size: 15px;font-family: "微软雅黑";display: none;border-radius: 5px;}
+			#shang img{display: none;}
+			#shang:hover img{display: block;}
+			#shang:hover .nev{width: 200px;height: 40px;display: block;background-color: white;}
+			#shang ul .nev a:hover {color: red;}
+			
+			#gou{width:120px;height: 38px;position: absolute;text-align: center;float: left;left: 100px;top: 0;}
+			#gou a{line-height:48px;font-size: 17px;}
+			.nev1{display: none;border-radius: 5px;}
+			#gou:hover .nev1{display: block;} 
+			#erweima {width:122px;height:95px;font-size: 10px;	position: absolute;	float: left;left: 1240px;top: 133px;}
+			#erweima img{width: 78px;height: 75px;margin-left: 7px;}
+			#erweima #dian{width: 13px; height: 13px; margin-left: 90px;margin-top: -70px;float: left;background: url(img/icon1.png)no-repeat -38px 0px;}
+			#erweima #dian1{width: 13px; height: 13px; margin-left: 90px;margin-top: -50px;float: left;background: url(img/icon1.png)no-repeat -82px 0px;}
+			
+			#tou{width: 100%;height: 40px;background-color: black;color: white;}	
+			#tou ul li a{color:white;}
+			.tou2{float: left;left: 220px;width: 210px;height: 40px;position: absolute;line-height: 40px;margin: 0 auto;background-color: red;margin-left: -47px;}
+			#tou ul li{color:white;text-align: center;}		
+			#touzuo{width: 960px;height: 40px;margin-left: 370px;}
+			.tou1{float: left;text-align: center;font-family: "微软雅黑";width: 120px;height: 40px;line-height: 40px;margin: 0 auto;}		
+			.tou1:hover{background-color:#3A3A3A;}
+			
+			#datu img{width: 100%;height: 450px;}
+		
+			#dise{width: 100%;height: 765px;background-color: white;}
+			#shiming{float:left; width:300px;height: 173px; background-color: whitesmoke;text-align: center; margin-left: 50px;margin-top: 20px;}
+			#shiming1{float: left; width: 80px;height: 78px;margin-left: 16px;margin-top: 4px;}
+			#shiming1 img{width: 32px;height: 32px;margin-left: 10px;margin-top: 10px;}
+			#shiming1 p a{font-family: "微软雅黑";font-size: 14px;color: black;}
+			#datuxia1{float: left; background: url(img/20170227100655865.jpg)no-repeat;width: 312px;height:160px;margin-top: 20px;margin-left: 10px;}
+			#datuxia2{float: left; background:url(img/20170227100656269.jpg)no-repeat;width: 312px;height: 160px;margin-top: 20px;margin-left: 10px;}
+			#datuxia3{float: left; background: url(img/20170227100656449.jpg)no-repeat;width: 312px;height: 160px;margin-top: 20px;margin-left: 10px;}
+			#rexiaowen{float: left; width:93%;height: 80px;margin-left: 5%;margin-top: 20px;font-size: 30px;font-weight: 100;}
+			#rexiaotuwen{float: left; width: 98%;height: 318px;margin-top:-17px;}
+			#chanpin{float: left;width: 18.6%;height: 318px;text-align: center;line-height: 50px;margin-left: 1.25%;}
+			#chanpin img{margin-top: 20px;width:135px ;height:133px ; }
+			#chanpin .qian{color: red;font-family: "微软雅黑";font-size: 17px;}
+			#chanpin .shijian{color: #B0B0B9;font-size: 13px;}
+			#chanpin .name{color: black;font-size: 15px; }
+			#xiaotu{float:left;width: 88%;height: 110px;margin-left: 7%;margin-top: 10px;}
+			#xiaotu img{width: 100%;height: 110px;margin-top: 20px;}
+			#shouji{ width: 93%;height:110px;margin-top: 1378px;margin-left: 5%;}
+			#shouji p a{font-size: 12px;width: 100px;height: 36px;color: #9E9E9E;margin-left: 96px;line-height: 77px;}
+			#shouji h3{font-size: 20px;width: 166px;height: 36px;color: black;line-height: 150px;}
+			#shouji h4{margin-left: 1022px;margin-top: -50px;}
+			#shouji h4 a{color:#999999;font-size: 14px;}
+			#chanpin1{float: left;width: 18.6%;height: 318px;text-align: center;line-height: 47px;margin-left: 1.25%;margin-top: 15px;background-color: white;}
+			#chanpin1 img{margin-top: 20px;width:146px ;height:146px ; }
+			#shoujituwentuwen{float: left; width: 93%;height: 318px;margin-top:-30px;margin-left: 5%;}
+			#chanpin1 .qian{color: red;font-family: "微软雅黑";font-size: 17px;}
+			#chanpin1 .shijian{color: #B0B0B9;}
+			#chanpin1 .name{color: black;font-size: 15px; }
+			#shouji1{ width: 93%;height:110px;margin-top: 2000px;margin-left: 5%;}
+			#shouji1 p a{font-size: 12px;width: 100px;height: 36px;color: #9E9E9E;margin-left: 113px;line-height: 77px;}
+			#shouji1 h3{font-size: 20px;width: 100px;height: 36px;color: black;line-height: 150px;}
+			#shouji1 h4{margin-left: 1022px;margin-top: -50px;}
+			#shouji1 h4 a{color: black;}
+			#shouji p a:hover{color: red;}
+			#shouji h4 a:hover{color: red;}
+			#chanpin1{float: left;width: 18.6%;height: 318px;text-align: center;line-height: 47px;margin-left: 1.25%;margin-top: 15px;background-color: white;}
+			#chanpin1 img{margin-top: 20px;width:146px ;height:146px ; }
+			#shoujituwentuwen1{float: left; width: 93%;height: 318px;margin-top:-30px;margin-left: 5%;position: absolute;}
+			#chanpin1 .qian{color: red;font-family: "微软雅黑";font-size: 17px;}
+			#chanpin1 .shijian{color: #B0B0B9;font-size: 13px;}
+			#chanpin1 .name{color: black;font-size: 15px; }
+			#shoujibox{width: 93%;height:800px;margin-left: 5%;}
+			#shoujibox1{width: 93%;height:800px;margin-left: 5%;margin-top: -1376px;}
+			#shoujibox2{width: 93%;height:800px;margin-left: 5%;margin-top: -1378px;}
+			#chanpin2{float: left;width: 18.6%;height: 318px;text-align: center;line-height: 47px;margin-left: 21%;margin-top: 20px;background-color: white;}
+			#chanpin2 img{margin-top: 20px;width:146px ;height:146px ; }
+			#chanpin2 .qian{color: red;font-family: "微软雅黑";font-size: 17px;}
+			#chanpin2 .shijian{color: #B0B0B9;font-size: 13px;}
+			#chanpin2 .name{color: black;font-size: 15px; }
+			#chanpin3 img{margin-top: 20px;width:146px ;height:146px ; }
+			#chanpin3 .qian{color: red;font-family: "微软雅黑";font-size: 17px;}
+			#chanpin3 .shijian{color: #B0B0B9;}
+			#chanpin3 .name{color: black;font-size: 15px; }
+			#chanpin3{float: left;width: 18.6%;height: 318px;text-align: center;line-height: 47px;margin-left: 41%;margin-top: -318px;background-color:white;}
+			#chanpin4 img{margin-top: 20px;width:146px ;height:146px ; }
+			#chanpin4 .qian{color: red;font-family: "微软雅黑";font-size: 17px;}
+			#chanpin4 .shijian{color: #B0B0B9;}
+			#chanpin4 .name{color: black;font-size: 15px; }
+			#chanpin4{float: left;width: 18.6%;height: 318px;text-align: center;line-height: 47px;margin-left:80.5%;margin-top: -318px;background-color: white;}
+			#ditu img{height: 110px;margin-top: 20px;margin-left: 8%;}
+			
+			#weixiubox{width: 100%;height:110px;background-color:white;margin-top: 5px;}
+			#weixiubox p a:hover{color: red;}
+			
+			#weixiu{width: 266px;height: 110px;margin-top: 30px;margin-left: 9%;}
+			#weixiutu{float: left; width:50px;height: 45px;background: url(img/icon14.png)no-repeat -212px 0;margin-top: 34px;}
+			#weixiu p a{font-size: 13px;color: black;margin-left: 10px;line-height: 115px;}
+			#weixiutu .weixiutu1{margin-left:4px;width: 48px;height: 44px;background: url(img/icon14.png)no-repeat 0px 0;display: none;}
+			#weixiutu:hover .weixiutu1 ,#weixiutu1:hover .weixiutu2,#weixiutu2:hover .weixiutu3,#weixiutu3:hover .weixiutu4{display: block;}
+			#weixiu1{float: left; width: 266px;height: 110px;margin-top:-115px;margin-left: 120%;}
+			#weixiutu1{float: left; width:50px;height: 45px;background: url(img/icon14.png)no-repeat -266px 0;margin-top: 34px;}
+			#weixiu1 p a{font-size: 13px;color: black;margin-left: 10px;line-height: 115px;}
+			#weixiutu1 .weixiutu2{margin-left:4px;width: 48px;height: 44px;background: url(img/icon14.png)no-repeat -54px 0;display: none;}
+			#weixiu2{float: left; width: 266px;height: 110px;margin-top:-115px;margin-left: 360%;}
+			#weixiutu2{float: left; width:50px;height: 45px;background: url(img/icon14.png)no-repeat -321px 0;margin-top: 34px;}
+			#weixiu2 p a{font-size: 13px;color: black;margin-left: 10px;line-height: 115px;}
+			#weixiutu2 .weixiutu3{margin-left:4px;width: 48px;height: 44px;background: url(img/icon14.png)no-repeat -109px 0;display: none;}
+			#weixiu3{float: left; width: 266px;height: 110px;margin-top: -115px;margin-left: 240%;}	
+			#weixiutu3{float: left; width:50px;height: 45px;background: url(img/icon14.png)no-repeat -374px 0;margin-top: 34px;}
+			#weixiu3 p a{font-size: 13px;color: black;margin-left: 10px;line-height: 115px;}
+			#weixiutu3 .weixiutu4{margin-left:4px;width: 48px;height: 44px;background: url(img/icon14.png)no-repeat -162px 0;display: none;}
+			
+			#dibubox{height: 230px;background-color: white;margin-top: 3px;}
+			#dibu1{float: left; width: 140px;height: 180px;margin-top: 35px;margin-left: 116px;text-align: center;}
+			#dibubox p a:hover{color:red ;text-decoration: underline;}
+			#dibutu{background: url(img/icon14.png)no-repeat 0 -52px;width:18px;height: 20px;margin-left: 19px;margin-top: 12px;}
+			#dibubox .bangzhu{font-size: 14px;color: black;line-height: 35px;margin-top: -28px;}
+			#dibubox p a{color: black;font-size: 13px;line-height: 20px;}
+			#dibutu2{background: url(img/icon14.png)no-repeat -26px -52px;width:18px;height: 20px;margin-left: 19px; margin-top: 12px;}
+			#dibubox .bangzhu{font-size: 14px;color: black;line-height: 35px;margin-top: -28px;}
+			#dibubox p a{color: black;font-size: 13px;line-height: 20px;}
+			#dibutu3{background: url(img/icon14.png)no-repeat -51px -52px;width:18px;height: 20px;margin-left: 19px; margin-top: 12px;}
+			#dibubox .bangzhu{font-size: 14px;color: black;line-height: 35px;margin-top: -28px;}
+			#dibubox p a{color: black;font-size: 13px;line-height: 20px;}
+			#dibutu4{background: url(img/icon14.png)no-repeat -78px -52px;width:18px;height: 20px;margin-left: 19px; margin-top: 12px;}
+			#dibubox .bangzhu{font-size: 14px;color: black;line-height: 35px;margin-top: -28px;}
+			#dibubox p a{color: black;font-size: 13px;line-height: 20px;}
+			#dibutu5{background: url(img/icon14.png)no-repeat 0 -74px;width:18px;height: 20px;margin-left: 19px; margin-top: 12px;}
+			#dibubox .bangzhu{font-size: 14px;color: black;line-height: 35px;margin-top: -28px;}
+			#dibubox p a{color:#DEC3BB;font-size: 13px;line-height: 20px;}
+			#weiba{ height: 255px;background-color: white;margin-top: 4px;}
+			#weiba1 p{font-size: 14px;color:black ;text-align: center;line-height: 23px;}
+			#weiba1{float: left;margin-left: 140px;  margin-top: 25px;height: 80px;}
+			#weiba1 p a{font-size: 13px;color: #9E9E9E;}
+			#weiba1 p a:hover{color: red;text-decoration: underline;}
+			#weiba2 p{ font-size: 14px;color:#DEC3BB ;text-align: center;line-height: 23px;}
+			#weiba2{float: left;margin-left: 260px;height: 80px;margin-top: 15px;}
+			#weiba2 img{float: left;margin-top: 25px;}
+			#weiba3{float: left; width: 380px;height: 47px;margin-left: 36%;}
+			#chajian1{width: 50px;height: 50px;border-radius: 25px;background-color: #999999;position: absolute;}
+			#chajiantu1{background:url(img/bianyuan.png)no-repeat -4px -32px;width: 50px;height: 30px;margin-left: 13px;margin-top: 11px;}
+			#chajian2{width: 50px;height: 113px;border-radius: 30px;background-color: #999999;position: absolute;top: 62px;ba }
+			#chajian{width: 50px;height: 167px;position:fixed;right: 0px;bottom: 30px;}
+			#chajiantu1 i{display: none;}#chajiantu1:hover i{display: block;}
+			#chajiantu2{background:url(img/bianyuan.png)no-repeat -4px 0;width: 50px;height: 30px;margin-left: 13px;margin-top: 16px;}
+			#chajiantu3{background:url(img/bianyuan.png)no-repeat -4px -63px;width: 50px;height: 30px;margin-left: 13px;margin-top: 21px;}
+			
+			#shangpin{width:210px;height:465px;background-color: white;position: absolute;left:173px;top: 266px;}
+			#shangpin1{width: 210px;height: 66.3px;background-color: white;}
+			
+			.shangpin1{width: 230px;height: 100%;background-color: #999999;position: absolute;left:210px;top: 0px;display: none;line-height: 40px;font-size: 15px;text-align: center;}
+			
+			#shangpin1:hover .shangpin1{display: block;}
+			
+			#shangpin1:hover{background-color:whitesmoke;width: 210px;height:66.3px}
+			.shangpin1 li a{color: red;}
+			#shangpin2,#shangpin7,#shangpin6,#shangpin5,#shangpin4,#shangpin3{width: 210px;height: 66.3px;}
+			#shangpin2:hover,#shangpin7:hover,#shangpin6:hover,#shangpin3:hover,#shangpin4:hover,#shangpin5:hover{background-color:whitesmoke;width: 210px;height: 66.4px;}
+		
+		</style>
+	</head>
+	<body>
+		<div id="quanbu">
+			<div class="yvyue">
+				<a href="#"><img src="img/20170220120023670.jpg"/></a>
+				<input id="quxiao" type="button" style="width: 24px;height: 25px;position: absolute;right:10px;top: 10px;border-radius: 15px;background: url(img/icon1.png) -2px -343px;"/>
+			</div>
+			<div id="top">
+			<div id="topyou">
+				<ul>
+					<li class="ruanjian" ><a href="#">华为官网  |</a></li>
+					<li class="ruanjian"><a href="#">荣耀官网  |</a></li>
+					<li class="ruanjian"><a href="#">软件应用  |</a>
+						<ul id="fuqi" style="margin-left: -7px;" >
+							<li class="ruanjian1"><a href="#">EMUI </a></li>
+							<li class="ruanjian1"> <a href="#">应用市场 </a></li>
+							<li class="ruanjian1"><a href="#">云服务 </a></li>
+							<li class="ruanjian1"><a href="#">开发者联盟 </a></li>
+						</ul>
+						
+						
+					</li>
+					<li class="ruanjian"style="width: 90px;"><a href="#">花粉俱乐部 | </a></li>
+					<li class="ruanjian"><a href="#"style="margin-left: 10px;">SelectRegion</a></li>
+				</ul>
+			</div>
+			<div id="topzuo">
+				<ul>
+					<li><a href="zhuce.html" id="ruanjian2" style="color: black;margin-left: 73px;position: absolute;">登录</a></li>
+					<li><a href="denglu.html" id="ruanjian2" style="color: black;position: absolute;margin-left: 29px;">注册|</a>
+					<li class="ruanjian"><a href="#" style="margin-right: -54px;" > V码(优购码)    |</a></li>
+					<li class="ruanjian"><a href="#" style="margin-right: -33px;"> 手机版      |</a></li>
+					<li class="ruanjian" style="margin-left: 330px;margin-top: -25px;" ><a href="#" style="margin-right: 45px;">网站导航       | </a>
+						<ul id="fuqi">
+							<li class="ruanjian1"><a href="#">帮助中心</a></li>
+							<li class="ruanjian1"> <a href="#">PC软件</a></li>
+							<li class="ruanjian1"><a href="#">数字音乐</a></li>
+							<li class="ruanjian1"><a href="#">爱旅</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="huaweitop">
+				<div id="huaweitu"></div>
+				<input type="text" id="sousuo" style="text-indent: 40px;outline: none;"/>
+				
+				<div id="sousuokuang" style="position: absolute; width: 390px;height: 42px;margin-top: -79px;margin-left: 499px;">
+						<p><a href="#" style=" text-align: center;  width:130px ;height: 18px;background-color:#B0B0B9;line-height: 54px;margin-left: 130px;font-size: 13px;" >荣耀8qingchuen</a></p>
+						<p><a href="#" style="text-align: center;  width:50px ;height: 18px;background-color:#B0B0B9;font-size: 13px;line-height: 18px;margin-left: 240px;position: absolute;margin-top: -37px;" >荣耀V9</a></p>	
+						<p><a href="#" style="text-align: center;  width:80px ;height: 18px;background-color:#B0B0B9;font-size: 13px;line-height: 18px;margin-left: 300px;position: absolute;margin-top: -37px;" >荣耀8青春版</a></p>
+				</div>
+				<div id="sousuotu" style="border: 1px solid #B0B0B9;width: 43px;height: 40px;margin-top: 0;"><a href="#"><img  src="img/icon47.png"/></a>
+					
+				</div>
+				<div id="shang">
+						<p style="border: 1px solid #B0B0B9;width: 100px;height: 40px;text-align: center;"><a href="#" style="line-height: 40px;" >我的商城</a></p>
+						<ul id="nev">
+							<li class="nev" style="color: black;line-height: 40px;">您好：请 <a href="zhuce.html" style="width: 150px;font-size: 15px; margin-left: 23px;position: absolute;">登录</a></li>
+							<li class="nev"><a href="denglu.html" style="width: 150px;  margin-left: 130px;font-size: 15px;margin-top: -40px;position: absolute;">注册</a></li>
+							<li class="nev"><a href="#" style="width: 150px;  margin-left: 30px;font-size: 15px;margin-top: -25px;position: absolute;">我的订单   |</a></li>
+							<li class="nev"><a href="#" style="width: 150px;  margin-left: 110px;font-size: 15px;margin-top: -65px;position: absolute;">  待支付</a></li>
+							<li class="nev"><a href="#" style="width: 150px;  margin-left: 45px;font-size: 15px;margin-top: -50px;position: absolute;">待评论    |</a></li>	
+							<li class="nev"><a href="#" style="width: 150px;  margin-left: 113px;font-size: 15px;margin-top: -90px;position: absolute;">优惠券</a></li>
+							<li class="nev"><a href="#" style="width: 150px;  margin-left: 45px;font-size: 15px;margin-top: -80px;position: absolute;">站内信</a></li>
+						</ul>
+					<a href="#"><img  style="width: 180px;height: 50px;float: left;margin-left: 12px;margin-top: -65px;" src="img/20160127095348354.jpg"/></a>
+				</div>
+				<div id="gou">
+				<p style="border: 1px solid #B0B0B9;width: 100px;height: 40px;margin-left: 976px;margin-top: 155px;"><a href="#" style="line-height: 40px;color: black;">我的购物车</a></p>	
+					<ul class="nev1" style="width: 343px;height: 100px;background-color: white;position: absolute;left: 735px;top: 197px;" >
+						<li style="background: url(img/icon1.png)no-repeat -261px 0px;width: 50px;height: 50px;float: left;margin-left: 100px;margin-top: 34px;" ></li>
+						<li><a href="#" style="font-size: 15px;color: black;line-height: 100px;margin-left: -80px;">!!查看购物车!!</a></li>
+					</ul>
+				
+				</div>
+				
+				
+			</div>
+			<div id="erweima">
+				<a href="#"><img src="img/qrcode_vmall_wechat01.jpg"/></a>
+				<p id="dian"></p>
+				<p id="dian1"></p>
+				<p><a href="#">专享周三无线专场</a></p>
+			</div>
+			<div id="tou">
+				<ul class="tou2">
+					<li>全部商品</li>
+				</ul>
+				
+				<div id="touzuo">
+				<ul>
+					<li class="tou1"><a href="#">首 页</a> </li>
+					<li class="tou1"><a href="#">华为专区</a></li>
+					<li class="tou1"><a href="#">荣耀专区 </a></li>
+					<li class="tou1"><a href="#">页荣耀V9</a></li>
+					<li class="tou1"><a href="#">荣耀8青春版 </a></li>
+					<li class="tou1"><a href="#">HUAWEI Mate 9</a></li>
+					<li class="tou1"> <a href="#">智能家居</a></li>
+					<li class="tou1"><a href="#">配件</a></li>
+				</ul>
+				</div>
+				
+				
+			</div>
+			<div id="datu">
+				<a href="#"><img id="tu" src="img/datu2.jpg"/></a>
+				<div id="shangpin">
+					<div id="shangpin1">
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">手机</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">荣耀</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">畅玩</a></p>
+					</div>
+					<div class="shangpin1">
+					<ul>
+						<li><a href="#">荣耀</a></li>
+						<li><a href="#">畅玩</a></li>
+						<li><a href="#">HUAWEI Mate系列</a></li>
+						<li><a href="#">HUAWEI P系列</a></li>
+						<li><a href="#">HUAWEI nova系列</a></li>
+						<li><a href="#">华为 G系列</a></li>
+						<li><a href="#">华为畅享系列</a></li>
+						<li><a href="#">合约机</a></li>
+						<li>推荐商品</li>
+						<li><a href="#">以旧换新</a></li>
+						<li><a href="#">荣耀 NOTE 8</a></li>
+					</ul>
+					</div>
+				
+					<div id="shangpin2">
+					<div id="shangpin1">
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">笔记本&平板</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">平板电脑</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">扩展坞</a></p>
+					</div>
+					</div>
+					<div id="shangpin3">
+					<div id="shangpin1">
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">穿戴</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">手表</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">手环</a></p>
+					</div>
+					
+					</div>
+					<div id="shangpin4">
+					<div id="shangpin1">
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">应用市场</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">手机游戏</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 90px;margin-top: -20px;font-size: 13px;">手机应用</a></p>
+					</div>
+					
+					</div>
+					<div id="shangpin5">
+					<div id="shangpin1">
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">智能家居</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left:14px;font-size: 13px;">字母路由</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 3px;font-size: 13px;">电视盒子</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 3px;font-size: 13px;">路由器</a></p>
+					</div>
+					
+					</div>
+					<div id="shangpin6">
+					
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">专属配件</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">保护壳</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 7px;font-size: 13px;">保护套</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 120px;margin-top: -19px;font-size: 15px;">贴膜</a></p>
+					</div>
+					<div id="shangpin7">
+					<div id="shangpin1">
+						<a href="#"><h5 style="color: black;margin-left: 20px;font-size: 16px;line-height:30px;">通用配件</h5></a>	
+						<p><a href="#" style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">移动电源</a>
+						<a href="#"style="float: left;color: #999999;margin-left: 20px;font-size: 13px;">音箱</a></p>
+					</div>
+					
+					</div>
+			
+				</div>
+			<input type="button" onclick="jian()" style="width: 28px;height: 48px;border-radius: 15px;position: absolute;left:4px;top: 460px;background: url(img/chajian4.png)no-repeat 0px -1px;outline: none;background-color: #B0B0B9;opacity: 0.5;"/>
+			<input type="button" id="tu1" style="width: 28px;height:48px;border-radius: 15px;position: absolute;right: 4px;top:460px;background: url(img/chajian4.png)no-repeat 0px -97px;outline: none;background-color: #B0B0B9;opacity: 0.5;"/>
+			
+			</div>
+			<div id="dise">
+				<div id="shiming">
+					<a href="#">
+						<div id="shiming1">
+							<img src="img/275d661e7106517e6d32a6a503edccb0.png"/>
+						<p style="font-size: 14px;color: black;font-family: '微软雅黑';">实名认证</p>
+					</a>
+					</div>
+				<a href="#">
+					<div id="shiming1">
+						<img src="img/145ec77ebedc2532604d3b82457f586a.png"/>
+						<p style="font-size: 14px;color: black;font-family: '微软雅黑';">以旧换新</p>
+					</div>
+				</a>
+					<a href="#">
+					<div id="shiming1">
+							<img src="img/9148fc18e5fe13a1e7eb66668b62bf10.png"/>
+						<p style="font-size: 14px;color: black;font-family: '微软雅黑';">优购码</p>
+					</div>	
+				</a>	
+					<a href="#">
+						<div id="shiming1">
+							<img src="img/biaotu.png"/>
+							<p style="font-size: 14px;color: black;font-family: '微软雅黑';">开售提醒</p>
+						</div>
+					</a>
+					<a href="#">
+						<div id="shiming1">
+							<img src="img/09506e164e078da20af2dde4f55d8df5.png"/>
+							<p style="font-size: 14px;color: black;font-family: '微软雅黑';">公告</p>
+						</div>
+					</a>
+					<a href="#">
+						<div id="shiming1">
+							<img src="img/biatu1.png"/>
+							<p><a href="#">特权频道</a></p>
+						</div>
+					</a>
+				</div>
+				<div id="datuxia">
+					<a href="#"><div id="datuxia1"></div></a>
+					<a href="#"><div id="datuxia2"></div></a>
+					<a href="#"><div id="datuxia3"></div></a>
+				</div>
+				<div id="rexiaowen">热销推荐</div>
+				<div id="rexiaotuwen">
+					<div id="chanpin" style="border: 1px solid whitesmoke;">
+						<a href="#">
+							<div id="chanpintu" style="background: url(img/1474556814096.jpg)no-repeat;margin-left:90px ;float: left;">
+							<img style="margin-left: -35px;"  src="img/rexiao1.jpg"/>
+							<h2 style="margin-left: -45px;" class="name">荣耀8青春版</h2>
+							<p style="margin-left: -45px;"class="shijian">2月28日10:08首发</p>
+							<p style="margin-left: -45px;"class="qian">1099元</p> 
+							</div>
+						</a>
+						
+					</div>
+					<div id="chanpin" style="border: 1px solid whitesmoke;">
+						<a href="#">
+							<div id="chanpintu" style="background: url(img/1474556855706.jpg)no-repeat;margin-left:85px ;float: left;">
+							<img style="margin-left: -30px;"   src="img/rexiao5.png"/>
+							<h2 style="margin-left: -35px;"class="name">HUAWEI MATE 9</h2>
+							<p style="margin-left: -35px;"class="shijian">进步 再进一步</p>
+							<p style="margin-left: -35px;"class="qian">3899元</p> 	
+						</div>
+						</a>
+							
+					</div>
+					<div id="chanpin" style="border: 1px solid whitesmoke;">
+						<a href="#">
+							<div id="chanpintu">
+								<img src="img/rexiao3.png"/>
+								<h2 class="name">荣耀8</h2>
+								<p class="shijian">限量赠耳机</p>
+								<p class="qian">1999元</p> 	
+							</div>
+						</a>
+
+					</div>
+					<div id="chanpin" style="border: 1px solid whitesmoke;">
+						<a href="#">
+							<div id="chanpintu" style="background: url(img/1474556828097.jpg)no-repeat;margin-left:90px ;float: left;">
+							<img style="margin-left: -33px;" src="img/rexiao2.png"/>
+							<h2 style="margin-left: -35px;"class="name">HUAWEI nova</h2>
+							<p style="margin-left: -35px;"class="shijian">直降200元 </p>
+							<p style="margin-left: -35px;"class="qian">2199元</p> 
+						</div>
+						</a>
+	
+					</div>
+					<div id="chanpin" style="border: 1px solid whitesmoke;">
+						<a href="#">
+						<div id="chanpintu">
+							<img src="img/rexiao4.jpg"/>
+							<h2 class="name">荣耀V8</h2>
+							<p class="shijian">双镜头 长续航</p>
+							<p class="qian">2099元</p> 	
+						</div>
+						</a>
+					
+					</div>
+					
+				</div>
+				<div id="xiaotu">
+					<a href="#"><img id="tu1" src="img/xiaotu1.jpg"/></a>
+				</div>
+			</div></div>
+			<div id="shoujibox">
+			<div id="shouji">
+			<h3>精品手机</h3>
+			<p><a href="#" style="width: 52px;height: 21px;margin-left: 115px;">荣耀 |</a></p>
+			<p><a href="#" style="width: 99px;height: 21px;margin-left: 153px;margin-top: -77px;float: left;" >荣耀畅玩系列 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 242px;margin-top: -77px;float: left;"> HUAWEI Mate系列 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 362px;margin-top: -77px;float: left;">HUAWEI P系列 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 460px;margin-top: -77px;float: left;"> HUAWEI nova系列  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left: 580px;margin-top: -77px;float: left;">华为 G系列 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 660px;margin-top: -77px;float: left;">华为畅享系列 |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left: 745px;margin-top: -77px;float: left;"> 合约机</a></p>
+			
+			
+				<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 990px;margin-top: -51px;">...</div>
+			<h4><a href="#">更多</a></h4>
+				<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 1065px;margin-top: -23px;">...</div>
+			
+			
+		</div>
+
+		<div id="shoujituwen">	
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/jingpin6.jpg"/>	
+						</div>
+						</a>	
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1"  style="background: url(img/1474556767268.jpg)no-repeat;margin-left:78px ;float: left;">
+							<img style="margin-left:-32px;"src="img/jingpin2.png"/>
+							<h2 style="margin-left:-40px;" class="name">HUAWEI P9</h2>
+							<p style="margin-left:-40px;"class="shijian">华为|徕卡 联合设计</p>
+							<p style="margin-left:-40px;" class="qian">3388元</p> 	
+						</div>	
+						</a>		
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jingpin3.png"/>
+							<h2 class="name">HUAWEI Mate 9 保时捷设计</h2>	
+							<p class="shijian">限量发售</p>
+							<p class="qian">8999元</p> 	
+						</div>
+						</a>	
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jingpin5.png"/>
+							<h2 class="name">畅玩5A</h2>
+							<p class="shijian">800万+1300wan
+							像素</p>
+							<p class="qian">799元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+							<div id="chanpintu1">
+							<img src="img/jingpin4.png"/>
+							<h2 class="name">荣耀畅玩6X</h2>
+							<p class="shijian">双镜头/大内存/长续航</p>
+							<p class="qian">1399元</p> 	
+						</div>
+						</a>
+						</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/jingpin1.jpg"/>	
+						</div>	
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jingpin7.png"/>
+							<h2 class="name">荣耀畅玩5C</h2>
+							<p class="shijian">芯片级省点</p>
+							<p class="qian">1199元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/rexiao3.png"/>
+							<h2 class="name">荣耀 NOTE 8</h2>
+							<p class="shijian">2K大屏续航</p>
+							<p class="qian">2499元</p> 	
+						</div>
+						</a>
+						
+						
+						
+						
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jingpin9.png"/>
+							<h2 class="name">华为畅享6S</h2>
+							<p class="shijian">千元高颜值旗舰</p>
+							<p class="qian">1499元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jingpin10.png"/>
+							<h2 class="name">华为畅享</h2>
+							<p class="shijian">轻薄机身 充沛电力 </p>
+							<p class="qian">1299元</p> 
+						</div>
+						</a>
+						
+					</div>
+
+	</div>
+
+		</div>
+			<div id="shoujibox1">
+			<div id="shouji">
+			<h3>笔记本&平板</h3>
+			<p><a href="#" style="width: 99px;height: 21px;margin-left: 150px; ">平板电脑 |</a></p>
+			<p><a href="#" style="width: 125px;height: 21px;margin-left: 210px;margin-top: -77px;float: left;" >HUAWEI MateBook |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 335px;margin-top: -77px;float: left;">扩展坞 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 387px;margin-top: -77px;float: left;">触控笔 |</a></p>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 990px;margin-top: -51px;">...</div>
+			<h4><a href="#">更多</a></h4>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 1065px;margin-top: -23px;">...</div>
+		</div>
+
+			<div id="shoujituwen">	
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 656px;margin-top: 0px;" src="img/bijiben.jpg"/>	
+						</div>	
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1"  style="background: url(img/1474556767268.jpg)no-repeat;margin-left:78px ;float: left;">
+							<img style="margin-left:-32px;"src="img/pingban.png"/>
+							<h2 style="margin-left:-38px;" class="name">HUAWEI P9</h2>
+							<p  style="margin-left:-38px;"class="shijian">华为|徕卡 联合设计</p>
+							<p  style="margin-left:-38px;"class="qian">3388元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1" style="background: url(img/1474556781883.jpg)no-repeat;margin-left:78px ;float: left;">
+							<img  style="margin-left:-52px;"src="img/pingban8.png"/>
+							<h2  style="margin-left:-60px;"class="name">HUAWEI Mate 9 保时捷设计</h2>	
+							<p style="margin-left:-60px;" class="shijian">限量发售</p>
+							<p  style="margin-left:-60px;"class="qian">8999元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pingban6.jpg"/>
+							<h2 class="name">畅玩5A</h2>
+							<p class="shijian">800万+1300wan
+							像素</p>
+							<p class="qian">799元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pingban3.png"/>
+							<h2 class="name">荣耀畅玩6X</h2>
+							<p class="shijian">双镜头/大内存/长续航</p>
+							<p class="qian">1399元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin2">
+						<a href="#">
+							<img src="img/pingban6.jpg"/>
+							<h2 class="name">荣耀畅玩5C</h2>
+							<p class="shijian">芯片级省点</p>
+							<p class="qian">1199元</p> 	
+						</a>
+							
+					</div>
+					<div id="chanpin2">
+						<a href="#">
+						<div id="chanpintu1">
+							<img style="width: 146px;height: 146px;" src="img/pingban8.png">
+							<h2 style="color: black;font-size: 15px;">荣耀 NOTE 8</h2>
+							<p class="shijian"> 2K大屏续航</p>
+							<p class="qian">2499元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin3">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pingban3.png"/>
+							<h2 class="name">华为畅享6S</h2>
+							<p class="shijian">千元高颜值旗舰</p>
+							<p class="qian">1499元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin4">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pingban4.png"/>
+							<h2 class="name">华为畅享</h2>
+							<p class="shijian">轻薄机身 充沛电力 </p>
+							<p class="qian">1299元</p> 
+						</div>
+						</a>
+						
+					</div>
+
+	</div>
+
+		</div>
+			<div id="shoujibox1">
+			<div id="shouji">
+			<h3>智能耳戴</h3>
+			<p><a href="#" style="width: 52px;height: 21px;margin-left: 150px; ">手环 |</a></p>
+			<p><a href="#" style="width: 99px;height: 21px;margin-left: 188px;margin-top: -77px;float: left;" >手表 |</a></p>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 990px;margin-top: -51px;">...</div>
+			<h4><a href="#">更多</a></h4>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 1065px;margin-top: -23px;">...</div>
+		
+			
+			</div>
+
+			<div id="shoujituwen">	
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 656px;margin-top: 0px;" src="img/zhinengbiao.jpg"/>	
+						</div>	
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1"  style="background: url(img/1474556828097.jpg)no-repeat;margin-left:78px ;float: left;">
+							<img style="margin-left:-32px;" src="img/biao.png"/>
+							<h2 style="margin-left:-38px;" class="name">HUAWEI P9</h2>
+							<p style="margin-left:-38px;"class="shijian">华为|徕卡 联合设计</p>
+							<p style="margin-left:-38px;"class="qian">3388元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1"  style="background: url(img/1474556869580.jpg)no-repeat;margin-left:78px ;float: left;">
+							<img style="margin-left:-50px;" src="img/biao4.jpg"/>
+							<h2 style="margin-left:-60px;"class="name">HUAWEI Mate 9 保时捷设计</h2>	
+							<p style="margin-left:-60px;"class="shijian">限量发售</p>
+							<p style="margin-left:-60px;"class="qian">8999元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1"  style="background: url(img/1474556828097.jpg)no-repeat;margin-left:80px ;float: left;">
+							<img style="margin-left:-36px;" src="img/biao5.png"/>
+							<h2 style="margin-left:-40px;" class="name">畅玩5A</h2>
+							<p  style="margin-left:-25px;"class="shijian">800万+1300wan像素</p>
+							<p  style="margin-left:-35px;"class="qian">799元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/biao2.png"/>
+							<h2 class="name">荣耀畅玩6X</h2>
+							<p class="shijian">双镜头/大内存/长续航</p>
+							<p class="qian">1399元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin2">
+						<a href="#">
+							<img src="img/biao6.png"/>
+							<h2 class="name">荣耀畅玩5C</h2>
+							<p class="shijian">芯片级省点</p>
+							<p class="qian">1199元</p> 	
+						</a>
+							
+					</div>
+					<div id="chanpin2">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/biao3.png"/>
+							<h2 class="name">荣耀 NOTE 8</h2>
+							<p class="shijian">2K大屏续航</p>
+							<p class="qian">2499元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin3">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/biao7.png"/>
+							<h2 class="name">华为畅享6S</h2>
+							<p class="shijian">千元高颜值旗舰</p>
+							<p class="qian">1499元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin4">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/biao1.png"/>
+							<h2 class="name">华为畅享</h2>
+							<p class="shijian">轻薄机身 充沛电力 </p>
+							<p class="qian">1299元</p> 
+						</div>
+						</a>
+						
+					</div>
+
+	</div>
+
+		</div>
+			<div id="shoujibox2">
+			<div id="shouji">
+			<h3>智能家居</h3>
+			<p><a href="#" style="width: 100px;height: 21px;margin-left: 150px; ">子母路由 |</a></p>
+			<p><a href="#" style="width: 99px;height: 21px;margin-left: 210px;margin-top: -77px;float: left;" >电视盒子 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 277px;margin-top: -77px;float: left;"> 路由器 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 330px;margin-top: -77px;float: left;">电力猫 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 383px;margin-top: -77px;float: left;"> 随行wifi  |</a></p>
+			<p><a href="#"style="width: 200px;height: 21px;margin-left: 440px;margin-top: -77px;float: left;">HUAWEI HiLink生态产品 |</a></p>
+			
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 990px;margin-top: -51px;">...</div>
+			<h4><a href="#">更多</a></h4>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 1065px;margin-top: -23px;">...</div>
+		</div>
+		<div id="shoujituwen">	
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/zhinengjiaju.jpg"/>	
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju7.png"/>
+							<h2 class="name">HUAWEI P9</h2>
+							<p class="shijian">华为|徕卡 联合设计</p>
+							<p class="qian">3388元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju4.png"/>
+							<h2 class="name">HUAWEI Mate 9 保时捷设计</h2>	
+							<p class="shijian">限量发售</p>
+							<p class="qian">8999元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju6.png"/>
+							<h2 class="name">畅玩5A</h2>
+							<p class="shijian">800万+1300wan
+							像素</p>
+							<p class="qian">799元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju2.jpg"/>
+							<h2 class="name">荣耀畅玩6X</h2>
+							<p class="shijian">双镜头/大内存/长续航</p>
+							<p class="qian">1399元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/zhinengjiaju1.jpg"/>	
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju1.png"/>
+							<h2 class="name">荣耀畅玩5C</h2>
+							<p class="shijian">芯片级省点</p>
+							<p class="qian">1199元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju3.png"/>
+							<h2 class="name">荣耀 NOTE 8</h2>
+							<p class="shijian">2K大屏续航</p>
+							<p class="qian">2499元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/jiaju.png"/>
+							<h2 class="name">华为畅享6S</h2>
+							<p class="shijian">千元高颜值旗舰</p>
+							<p class="qian">1499元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+							<div id="chanpintu1">
+							<img src="img/jiaju5.png"/>
+							<h2 class="name">华为畅享</h2>
+							<p class="shijian">轻薄机身 充沛电力 </p>
+							<p class="qian">1299元</p> 
+						</div>
+						</a>
+					</div>
+
+	</div>
+
+		</div>
+			<div id="shoujibox2">
+			<div id="shouji">
+			<h3>热销配件</h3>
+			<p><a href="#" style="width: 52px;height: 21px;margin-left: 150px; ">移动电源 |</a></p>
+			<p><a href="#" style="width: 99px;height: 21px;margin-left: 213px;margin-top: -77px;float: left;" >耳机 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 252px;margin-top: -77px;float: left;"> 充电器/线材 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 328px;margin-top: -77px;float: left;">自拍杆/支架 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 405px;margin-top: -77px;float: left;"> 音箱  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left: 440px;margin-top: -77px;float: left;">U盘/存储卡 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 515px;margin-top: -77px;float: left;">排插 |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left:550px;margin-top: -77px;float: left;"> 摄像机/镜头  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left:623px;margin-top: -77px;float: left;"> 智能硬件  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left:680px;margin-top: -77px;float: left;"> 生活周边  |</a></p>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 990px;margin-top: -51px;">...</div>
+			<h4><a href="#">更多</a></h4>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 1065px;margin-top: -23px;">...</div>
+		</div>
+
+
+		<div id="shoujituwen">	
+
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/peijian.jpg"/>	
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1"  style="background: url(img/1474556767268.jpg)no-repeat;margin-left:78px ;float: left;" >
+							<img style="margin-left:-32px;" src="img/peijian1.jpg"/>
+							<h2 style="margin-left:-38px;" class="name">HUAWEI P9</h2>
+							<p style="margin-left:-38px;" class="shijian">华为|徕卡 联合设计</p>
+							<p  style="margin-left:-38px;"class="qian">3388元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/peijian2.jpg"/>
+							<h2 class="name">HUAWEI Mate 9 保时捷设计</h2>	
+							<p class="shijian">限量发售</p>
+							<p class="qian">8999元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/peijian8.jpg"/>
+							<h2 class="name">畅玩5A</h2>
+							<p class="shijian">800万+1300wan
+							像素</p>
+							<p class="qian">799元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/peijian4.png"/>
+							<h2 class="name">荣耀畅玩6X</h2>
+							<p class="shijian">双镜头/大内存/长续航</p>
+							<p class="qian">1399元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/peijian6.jpg"/>	
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/peijian9.png"/>
+							<h2 class="name">荣耀畅玩5C</h2>
+							<p class="shijian">芯片级省点</p>
+							<p class="qian">1199元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/peijian7.jpg"/>
+							<h2 class="name">荣耀 NOTE 8</h2>
+							<p class="shijian">2K大屏续航</p>
+							<p class="qian">2499元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/peijian10.png"/>
+							<h2 class="name">华为畅享6S</h2>
+							<p class="shijian">千元高颜值旗舰</p>
+							<p class="qian">1499元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+							<div id="chanpintu1">
+							<img src="img/peijian3.png"/>
+							<h2 class="name">华为畅享</h2>
+							<p class="shijian">轻薄机身 充沛电力 </p>
+							<p class="qian">1299元</p> 
+						</div>
+						</a>
+					</div>
+
+	</div>
+		</div>
+			<div id="shoujibox2">
+			<div id="shouji">
+			<h3>品牌配件</h3>
+				<p><a href="#" style="width: 52px;height: 21px;margin-left: 150px; ">移动电源 |</a></p>
+			<p><a href="#" style="width: 99px;height: 21px;margin-left: 213px;margin-top: -77px;float: left;" >耳机 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 252px;margin-top: -77px;float: left;"> 充电器/线材 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 328px;margin-top: -77px;float: left;">自拍杆/支架 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 405px;margin-top: -77px;float: left;"> 音箱  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left: 440px;margin-top: -77px;float: left;">U盘/存储卡 |</a></p>
+			<p><a href="#"style="width: 120px;height: 21px;margin-left: 515px;margin-top: -77px;float: left;">排插 |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left:550px;margin-top: -77px;float: left;"> 摄像机/镜头  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left:623px;margin-top: -77px;float: left;"> 智能硬件  |</a></p>
+			<p><a href="#"style="width: 99px;height: 21px;margin-left:680px;margin-top: -77px;float: left;"> 生活周边  |</a></p>
+			
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 990px;margin-top: -51px;">...</div>
+			<h4><a href="#">更多</a></h4>
+			<div id="diandian" style="position: absolute;width: 30px;height: 15px;line-height: 6px;
+    			font-size: 30px;color: #999999;margin-left: 1065px;margin-top: -23px;">...</div>
+		</div>
+		<div id="shoujituwen">	
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/pinpai.jpg"/>	
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1" style="background: url(img/1474556855706.jpg)no-repeat;margin-left:78px ;float: left;" >
+							<img style="margin-left:-32px;" src="img/pinpai1.jpg"/>
+							<h2 style="margin-left:-38px;" class="name">HUAWEI P9</h2>
+							<p style="margin-left:-38px;" class="shijian">华为|徕卡 联合设计</p>
+							<p  style="margin-left:-38px;"class="qian">3388元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1" style="background: url(img/1474556767268.jpg)no-repeat;margin-left:87px ;float: left;">
+							<img  style="margin-left:-70px;"src="img/pinpai2.jpg"/>
+							<h2  style="margin-left:-70px;"class="name">HUAWEI Mate 9 保时捷设计</h2>	
+							<p style="margin-left:-70px;" class="shijian">限量发售</p>
+							<p style="margin-left:-70px;" class="qian">8999元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pinpai3.jpg"/>
+							<h2 class="name">畅玩5A</h2>
+							<p class="shijian">800万+1300wan像素</p>
+							<p class="qian">799元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pinpai4.jpg"/>
+							<h2 class="name">荣耀畅玩6X</h2>
+							<p class="shijian">双镜头/大内存/长续航</p>
+							<p class="qian">1399元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div class="chanpintu2">
+							<img  style="width: 100%; height: 318px;margin-top: 0px;" src="img/pinpai9.jpg"/>	
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pinpai5.jpg"/>
+							<h2 class="name">荣耀畅玩5C</h2>
+							<p class="shijian">芯片级省点</p>
+							<p class="qian">1199元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pinpai6.png"/>
+							<h2 class="name">荣耀 NOTE 8</h2>
+							<p class="shijian">2K大屏续航</p>
+							<p class="qian">2499元</p> 
+						</div>
+						</a>
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+						<div id="chanpintu1">
+							<img src="img/pinpai7.png"/>
+							<h2 class="name">华为畅享6S</h2>
+							<p class="shijian">千元高颜值旗舰</p>
+							<p class="qian">1499元</p> 
+						</div>
+						</a>
+						
+					</div>
+					<div id="chanpin1">
+						<a href="#">
+							<div id="chanpintu1">
+							<img src="img/pinpai8.jpg"/>
+							<h2 class="name">华为畅享</h2>
+							<p class="shijian">轻薄机身 充沛电力 </p>
+							<p class="qian">1299元</p> 
+						</div>
+						</a>
+					</div>
+
+	</div>
+
+		</div>
+			<div id="ditu"><a href="#"><img src="img/20160923092437178.jpg"/></a></div>
+			<div id="weixiubox">
+			<div id="weixiu">
+				<div id="weixiutu">  
+				<ul>
+					<a href="#"><li class="weixiutu1"></li></a>
+				</ul>
+				</div>
+					<p><a href="#">500强企业 品质保证</a></p>
+				<div id="weixiu1">
+					<div id="weixiutu1">
+					<ul>
+						<a href="#"><li class="weixiutu2"></li></a>
+					</ul>	
+					</div>
+					<p><a href="#">7天退货 15天换货</a></p>
+				</div>
+				<div id="weixiu2">
+					<div id="weixiutu2">
+						<ul>
+					<a href="#"><li class="weixiutu3"></li></a>
+				</ul>
+					</div>
+					<p><a href="#"> 99元起免运费</a></p>
+				</div>
+				<div id="weixiu3">
+					<div id="weixiutu3">
+						<ul>
+					<a href="#"><li class="weixiutu4"></li></a>
+				</ul>
+					</div>
+					<p><a href="#">448家维修网点 全国联保</a></p>
+				</div>
+			</div>
+		</div>
+			<div id="dibubox">
+			<div id="dibu1">
+				<div id="dibutu">
+			</div>
+				<p class="bangzhu">帮助中心</p>
+				<p><a href="#">购物指南</a></p>
+				<p><a href="#">配送方式</a></p>
+				<p><a href="#">支付方式</a></p>
+				<p><a href="#">常见问题</a></p>
+			</div>
+			<div id="dibu1">
+				<div id="dibutu2">
+			</div>
+				<p class="bangzhu">售后服务</p>
+				<p><a href="#">保修政策</a></p>
+				<p><a href="#">退换货政策</a></p>
+				<p><a href="#">退换货流程</a></p>
+				<p><a href="#">保修状态查询</a></p>
+				
+			</div>
+			<div id="dibu1">
+				<div id="dibutu3">
+			</div>
+				<p class="bangzhu">技术支持</p>
+				<p><a href="#">售后网点</a></p>
+				<p><a href="#">荣耀零售店铺</a></p>
+				<p><a href="#">预约维修</a></p>
+				<p><a href="#">手机寄修服务</a></p>
+				<p><a href="#">维修配件价格查询</a></p>
+				<p><a href="#">软件下载</a></p>	
+			</div>
+			<div id="dibu1">
+				<div id="dibutu4">
+			</div>
+				<p class="bangzhu">关于商城</p>
+				<p><a href="#">公司介绍</a></p>
+				<p><a href="#">华为商城简介</a></p>
+				<p><a href="#">联系客服</a></p>
+			</div>
+			<div id="dibu1">
+				<div id="dibutu5">
+			</div>
+				<p class="bangzhu">关注我们</p>
+				<p><a href="#">新浪微博</a></p>
+				<p><a href="#">腾讯微博</a></p>
+				<p><a href="#">花粉俱乐部</a></p>
+				<p><a href="#">商城手机版</a></p>
+			</div>
+		</div>
+			<div id="weiba">
+			<div id="weiba1">
+			<p><a href="#">友情链接： |</a>
+				<a href="#"> 华为官网 |</a>
+				<a href="#"> 华为消费者业务 |</a>
+				<a href="#"> 荣耀官网 |</a>
+				<a href="#"> 花粉俱乐部 |</a>
+				<a href="#">莫塞尔商城 |</a>
+				<a href="#"> 爱旅官网 |</a>
+				<a href="#"> 华为应用市场 | </a>
+				<a href="#">万表网 |</a>
+				<a href="#"> 中商情报网 |</a>
+				<a href="#" > 刷机精灵 | </a>
+				<a href="#" >华为手机 | </a>
+				<a href="#" >优购物官网 |</a>
+				<a href="#" style=""> 智能电视 |</a>
+				<a href="#"> UC浏览器 |</a></p>
+			<p><a href="#">中关村商城 |<a href="#"> 酷狗音乐 | <a href="#">华为商城手机版 |<a href="#">
+				 百信手机网 | <a href="#">卡宝宝网 | <a href="#">多特软件下载 | <a href="#">同步助手 | <a href="#">蜂鸟摄影网 | <a href="#">奇珀论坛 |<a href="#"> 家具商城 |<a href="#"> 拍鞋网商城 | <a href="#">欧宝丽珠宝 | <a href="#">寻购网 |<a href="#"> 亿智蘑菇 |<a href="#"> 安卓市场 |</a></p>
+			<p><a href="#">阿里巴巴生意经 |</a>
+				<a href="#"> 手机大全 |</a>
+				<a href="#"> 安卓软件园 |</a>
+				<a href="#"> 卓大师刷机 |</a>
+				<a href="#">智机论坛 |</a>
+				<a href="#">电子产品世界 |</a>
+				<a href="#"> 历趣网 |</a>
+				<a href="#">网购返利 | </a>
+				<a href="#">Apple110 |</a>
+				<a href="#"> 91手机门户网 |</a>
+				<a href="#"> 移动叔叔 |</a>
+				<a href="#"> 奥特莱斯 |</a>
+				<a href="#"> 荣耀Magic |</a>
+				<a href="#"> 携程租车 | </a>
+				<a href="#">阿里巴巴生意经 |</a>
+				<a href="#"> 手机大全 |</a></p>
+				<p><a href="#">安卓软件园 |</a>
+				<a href="#"> 卓大师刷机 |</a>
+				<a href="#"> 智机论坛 |</a>
+				<a href="#"> 电子产品世界 | </a>
+				<a href="#">历趣网 |</a>
+				<a href="#"> 网购返利 |</a>
+				<a href="#"> Apple110 |</a>
+				<a href="#"> 91手机门户网 |</a>
+				<a href="#">移动叔叔 |</a>
+				<a href="#">奥特莱斯 |</a>
+				<a href="#"> 荣耀Magic |</a>
+				<a href="#"> 携程租车 | </a>
+				<a href="#"style="color: red;">申请链接 >></a></p>
+			</div>
+			<div id="weiba2">
+				<img src="img/20160226162651249.png"/>
+				<p>隐私政策 服务协议 Copyright © 2012-2017 VMALL.COM 版权所有 保留一切权利</p>
+				<p>苏公网安备 32011402010009号 | 苏ICP备09062682号-9 | 增值电信业务经营许可证：苏B2-20130048 | 网络文化经营许可证：苏网文[2015] 1599-026号</p> 
+			</div>
+			<div id="weiba3">
+				<img src="img/20161224180914742.jpg"/>
+				<img src="img/20160226162415360.png"/>
+				<img src="img/20160226162521265.png"/>
+				<img src="img/20160226162531395.png"/>
+				
+			</div>
+			
+			
+		</div>
+			<div id="chajian">
+			<div id="chajian1" style="opacity: 0.5;" >
+				<a href="#" title="返回顶部" style="background:url(img/1474556781883.jpg) ;"  >
+					<div id="chajiantu1">						</div>
+				</a>
+			</div>
+		<div id="chajian2" style="opacity: 0.5;">
+			<a href="#" title="反馈意见" >
+				<div id="chajiantu2"></div>
+			</a>
+			<a href="#" title="注意收听" >
+				<div id="chajiantu3" style="opacity: 0.5;"></div>
+			</a>
+		</div>
+		</div>
+		</div>
+		
+	<script type="text/javascript">
+			var x=1
+			var tu=document.getElementById("tu")
+			var tu1=document.getElementById("tu1")
+			tu1.onclick=function(){
+				jia()
+			}
+			
+			function jia(){
+				x++;
+				if(x==6){x=1};
+				tu.src="img/datu"+x+".jpg";
+			}
+			function jian(){
+				x--;
+				if(x==0){x=5};
+				tu.src="img/datu"+x+".jpg";
+			}
+			setInterval(jia,3000);
+	</script>
+	<script type="text/javascript">
+			var y=1;
+			var tu1=document.getElementById("tu1");
+			function jia1(){
+				y++;
+				if(y==4){y=1};
+				tu1.src="img/xiaotu"+y+".jpg"
+			}
+			setInterval(jia1,3000)
+	</script>
+	
+		
+	</body>
+</html>

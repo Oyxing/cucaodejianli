@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{padding: 0;margin: 0;text-decoration: none;  color: black;list-style: none;}
+			/*赵淳*/
+			#ding1{width: 100%px;height: 40px;background-color: #F8F8F8;}
+			#nei1{width: 92px;height: 40px;margin-left: 20px;float: left;}
+			#tu1{margin-top: 5px;}
+			#nei2{width: 510px; height: 40px; float: left;margin-left: 100px;float: left;}
+			#ding1 #nei2  li {width: 40px;height: 40px;font-size: 16px;font-family: "黑体";float: left; text-align: center;line-height: 36px;font-weight: bold;}
+			#nei3{width:47px;height:40px;float: left;margin-left: 450px;margin-top: 11px;}
+			.jiacu{float: left;margin-top: 13px;font-weight: bold;}
+		   	#hy{width: 100px;height: 14px;float: left;margin-top: 14px;font-size: 13px;margin-left: 10px;color:#666666;}
+		   	#hy ul{line-height: 25px;font-size: 13px;color: #888888;display:none;}
+		   	#hy:hover ul {display: block;} 
+		   	.zh:hover{text-decoration: underline; }
+		   	#bj{width: 100%px;height: 2210px;background:#17784b url(kr20170119bg.jpg)no-repeat -280px 0px;}
+		   	#shang{width: 1000px;height: 464px;margin: 0 auto;}
+		   	#wz{width: 170px;height: 30px;background-color: #71747D;margin-top: 50px;float: left;font-size: 13px;font-weight: bold;border-radius: 10px;}
+		   	#kk{width: 230px;height:70px;margin-left: 230px;margin-top: 70px;float: left;}
+           	#caidan{width: 755px;height:56px;float: left;margin-top: 50px;background: url(img/dnavbiankuang.png)no-repeat -10px -77px;}
+           	#caidan .bjdw{width:139px;height:56px;background: url(img/背景定位.png) 0px 0px;float: left;overflow: hidden;}
+           	#caidan .bjdw1{width:126px;height:56px;background: url(img/背景定位.png) -139px 0px;float: left;}
+           	#caidan .bjdw2{width:126px;height:56px;background: url(img/背景定位.png) -261px 0px;float: left;}
+           	#caidan .bjdw3{width:126px;height:56px;background: url(img/背景定位.png) -381px 0px;float: left;}
+           	#caidan .bjdw4{width:126px;height:56px;background: url(img/背景定位.png) -502px 0px;float: left;}
+           	#caidan .bjdw5{width:112px;height:56px;background: url(img/背景定位.png) -619px 0px;float: left;}
+           	#caidan .bjdw:hover {width:139px;height:56px;background: url(img/背景定位.png) 0px -117px;}
+		   	#caidan .bjdw1:hover{width:120px;height:56px;background: url(img/背景定位.png) -141px -117px;}
+		   	#caidan .bjdw2:hover{width:126px;height:56px;background: url(img/背景定位.png) -260px -117px;}
+		   	#caidan .bjdw3:hover{width:126px;height:56px;background: url(img/背景定位.png) -381px -117px;}
+		   	#caidan .bjdw4:hover{width:120px;height:56px;background: url(img/背景定位.png) -500px -117px;}
+		   	#caidan .bjdw5:hover{width:110px;height:56px;background: url(img/背景定位.png) -621px -117px;}
+		   	#yb{width: 267px;height: 180px;background-color: firebrick;float: left;margin-left: -22px;margin-top: -74px;background: url(img/xiazaiyouxi1.png);}
+		   	#yb:hover{background: url(img/xiazaiyouxi2.png);}
+		  	.bj1{width: 767px;height: 40px;position: absolute;top: 200px;left: 179px;background-color: #000000;float: left;border-bottom-right-radius:29px; opacity: 0.5;display: none;}
+		   	.bjdw:hover .bj1{display: block;}
+		   	.bj1 .xz1  {width: 100px;height: 20px; float: left;font-size: 15px;font-family: "微软雅黑";color:white;margin-top: 10px;margin-left: 4px;}
+		  	.bjdw1:hover .bj1{display: block;}
+		  	.bjdw2:hover .bj1{display: block;}
+		  	.bjdw3:hover .bj1{display: block;}
+		  	.xz1:hover{color:#04C1FD;}
+		  	#lb1{width: 1000px;height: 337px;background:url(img/2.png);float: left;}
+		  	#lb{margin-left: 16px;margin-top: 16px;width: 970px;height: 283px;}
+			/*院兴*/
+			#zhongbu{width:1000px;height:1560px;background-color: white;margin: 80px auto;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;}
+			#zhongbuzuo{width: 725px;height:1560px;margin-top: 112px;}
+			#zhongbuzuo1{float: left; margin-left: 25px;  width: 700px;height: 190px;background-color: #F0F0F0;}
+			#zhongtopneirong{background: url(img/zhongjianbeijing.png);width: 700px;height:47px;float: left;border-top-left-radius: 10px;}
+			#zhongtopneirong h3{line-height: 47px;margin-left: 10px;}
+			#zhongtopneirong p{float: left;margin-left: 574px;margin-top: -35px;font-family: "微软雅黑";  font-size: 15px;color:#646488;font-weight: bold;}
+			#zhongtopneirong .neirong1{margin-left: 652px;color:#B5B5B5 ;}
+			#zhongtopneirongtu{margin-top: 68px;margin-left: 20px;}
+			#zhongtopneirongwen p{font-size:13px;float: left;margin-left: 190px;margin-top: -105px;width: 503px;height:60px ;}
+			#zhongtopneirongwen a{font-size:12px;float: left;margin-left: 190px;margin-top: -20px;color: red;font-weight:bold;}
+			#zhongbuyou{float: left; width: 250px;height: 100%;background-color:white;margin-left: 737px;margin-top: -1560px;}
+			#zhongbuyoudeng{background: url(img/zhongbuyou.jpg) 0px -140px;width: 250px; height:69px ;margin-top: 20px;}
+			#zhongbuyoudeng .ding1{background: url(img/zhongbuyou.jpg) -250px -140px;width: 250px; height:69px;display: none;}
+			#zhongbuyoudeng:hover .ding1{display: block;}
+			#zhongbuyouzhu{background: url(img/zhongbuyou.jpg) 0px -206px;width: 120px; height:35px ;margin-left: 3px;}
+			#zhongbuyouzhu .ding2{background: url(img/zhongbuyou.jpg)  -120px -206px;width: 120px; height:35px ;display: none;}
+			#zhongbuyouzhu:hover .ding2{display: block;}
+			#zhongbuyoukefu{background: url(img/zhongbuyou.jpg) -360px -206px;width: 120px; height:35px ;margin-left: 3px;margin-top: 4px;}
+			#zhongbuyoukefu .ding3{background: url(img/zhongbuyou.jpg)  -240px -206px;width: 120px; height:35px ;display: none;}
+			#zhongbuyoukefu:hover .ding3{display: block;}
+			#zhongbuyouanquan{background: url(img/zhongbuyou.jpg) -240px -240px;width: 120px; height:35px ;margin-left:127px;margin-top:-72px;}
+			#zhongbuyouanquan .ding4{background: url(img/zhongbuyou.jpg)  -360px -240px;width: 120px; height:35px ;display: none;}
+			#zhongbuyouanquan:hover .ding4{display: block;}
+			#zhongbuyouchong{background: url(img/zhongbuyou.jpg) 0px -240px;width: 120px; height:35px ;margin-left:127px;margin-top: 4px;}
+			#zhongbuyouchong .ding5{background: url(img/zhongbuyou.jpg)  -120px -240px;width: 120px; height:35px ;display: none;}
+			#zhongbuyouchong:hover .ding5{display: block;}
+			#zhongbuzhangyu{width: 250px;height: 200px;background-color: #DADADA;border-radius: 6px;margin-top: 10px;}
+			#zhongbuxinshou{background: url(img/zhongbuyou.jpg) 0px 0px;width: 250px; height:69px ;margin-top: 7px;}
+			#zhongbuxinshou .zhongbuxinshou1{background: url(img/zhongbuyou.jpg) -250px 0px;width: 250px; height:69px ;margin-top: 7px;display: none;}
+			#zhongbuxinshou:hover .zhongbuxinshou1{display: block;}
+			#zhongbuzhanghu img{width: 250px;height: 70px;margin-top: 7px;}
+			#zhongbupaihangzi{width: 250px;height: 320px;margin-top: 5px;}
+			#zhongbupaihangzi li{float: left;margin-left: 2px;width: 77px;text-align: center;}
+			.saiche{background-color: #DADADA;border: 1px solid white;} 
+			 .saiche:hover,.paihang:hover,.huizhang:hover{background-color: #DADADA;border: 1px solid white;}
+			#zhongbupaihangzixia{width: 248px;height: 307px;margin-top: 10px;float: left;border: 1px solid #B5B5B5;font-size: 17px;}
+			#zhongbupaihangzixia tr td{text-align: center;height: 23px;border-bottom: 1px solid #DADADA;font-size: 12px;}
+			#zhongbupaixia{width: 250px;height:200px;background-color: #F0F0F0;float: left;margin-top: 10px;border-radius: 10px;}
+			#zhongbupaixia li{ float: left;width: 78px;font-size: 13px; text-align: center;line-height: 26px;height: 26px;margin-top: 5px;}
+			#zhongbupaixia1{width: 234px;height: 185px;border: 1px solid #FFFFFF;margin: 4px auto;}
+			.zhongbupaixiazi1{background-color: white;}
+			.zhongbupaixiazi2:hover,.zhongbupaixiazi3:hover{background-color:white;border: 2px solid #F0F0F0;float: left;}
+			#zhongbupaixiaxiaotu{width: 250px;height: 95px;background-color: #DADADA;float: left;margin-top: 5px;border-radius: 7px;}
+			#zhongbujiazhang{width: 250px;height: 55px;background-color: #DADADA;float: left;margin-top: 5px;border-radius: 7px;}
+			.zhongbuwangyou{width: 150px;height: 23px;background: url(img/zhongbuyou.jpg)0px 46px;margin-left: 5px;margin-top: 5px;}
+			.zhongbuwangyou:hover{width: 150px;height: 23px;background: url(img/zhongbuyou.jpg)-150px 46px;margin-left: 5px;margin-top: 5px;}
+			.zhongbushiming{width: 75px;height: 24px;background: url(img/zhongbuyou.jpg)0px 23px;margin-left: 165px;margin-top: -22px;}
+			.zhongbushiming:hover{width: 75px;height: 24px;background: url(img/zhongbuyou.jpg)-75px 23px;margin-left: 165px;margin-top: -22px;}
+			.jiejue{float: left;margin-left: 177px;margin-top: -13px;width: 630px;line-height: 0px;}
+			#zhongbupaixia1 p:hover{color:#75715B ;text-decoration: underline;}
+			#zhongbuhehuo{width: 250px;height: 50px;background-color: #DADADA;float: left;border-radius: 7px;margin-top: 5px;}
+			/*梁东昵*/
+			#bottm{width: 100%;height: 135px;background-color:#1C1302;}	#bottm{width: 100%;height: 135px;background-color:#1C1302;}	
+			#bottm #bottm1{width: 990px;height: 115px;margin: 0 auto;padding-top: 20px;padding-left: 10px;}	
+			#bottm #bottm1 #bottm2{width: 980px;height: 95px;}
+			#bottm #bottm1 #bottm2 .bottm-left{width: 490px;height: 95px;float: left;}
+			.bottm-left #left1{width: 94px;height: 40px;background: url(img/db1.png);overflow: hidden;float: left;}
+			.bottm-left #left2{width: 375px;height: 95px;float: left;margin-left: 10px;}
+			.bottm-left #left2 p{font-family: "微软雅黑";font-size: 12px;margin-bottom: 5px;color: #818181;}
+			.bottm-left #left2 p .sjtc{color: #818181}
+			.bottm-left #left2 p .sjtc:hover{color: white;}
+			.bottm-left #left2-1{width: 368px;height: 21px;background: url(img/db5.png) no-repeat left bottom;margin-top: 10px;}
+			.bottm-right .db2{width: 99px;height: 38px;margin-top: 10px;margin-left: 5px;float: left;}
+			.bottm-right #db3{width: 32px;height: 35px;margin-top: 10px;margin-left: 10px;float: left;}
+			.bottm-right .db4{width: 36px;height: 49px;margin-top: 10px;margin-left: 10px;float: left;}
+			.bottm-right #lu{width: 130px;height: 45px;float: left;margin-top: 10px;margin-left: 10px;			}
+			.bottm-right #lu .lu1{width: 130px;height: 14px;font-family: "微软雅黑";font-size: 12px;color: #818181;text-align: center;line-height: 14px;margin-bottom: 2px;}
+			.bottm-right #lu .lu1:hover{border-bottom: 1px solid #818181;}
+			#db6{width: 151px;height: 45px;background:url(img/db6.png) no-repeat;float: left;margin-top: 10px;margin-left: 5px;}
+			#db6 span{width: 60px;height: 14px;font-family: "微软雅黑";font-size: 12px;color: #FFFFFF;float: left;text-align: center;line-height: 14px;}
+			#db6 i{width: 90px;height: 14px;font-family: "微软雅黑";font-size: 12px;color: #FFFFFF;float: left;text-align: center;line-height: 14px;}
+			.span1{border-right: 1px solid #6eb755;border-bottom: 1px solid #6eb755;}
+			.i1{border-bottom: 1px solid #6eb755;}
+			.span2{border-right: 1px solid #6eb755;}	
+			
+		</style>
+	</head>
+	<body>
+		<audio autoplay="autoplay"  src="jiaruyinyue.mp3" ></audio>
+		<!--赵淳-->
+		<div id="ding1">
+			<div id="nei1" title="世纪天成">
+				<a href="#"><img id="tu1" src="img/世纪天成.gif"/></a>
+			</div>
+			<div id="nei2">
+				<ul>
+					<a href="#"><li title="游戏">游戏</li></a>
+					<li style="color: #f1f1f1;">/</li>
+					<a href=""><li title="论坛">论坛</li></a>
+				    <a href=""><li style="color: #f1f1f1;">/</li>
+					<a href=""><li title="充值">充值</li></a>
+					<li style="color: #f1f1f1;">/</li>
+					<a href=""><li title="安全">安全</li></a>
+					<li style="color: #f1f1f1;">/</li>
+					<p class="jiacu"><img src="img/红字.gif"/></p>
+                </ul>
+			</div>
+			<div id="nei3">
+				<a href="mimadenglu.html" title="登录">
+				<img src="img/gnb_login.gif"/></a>
+			</div>
+			<div id="hy">
+				<a href=""><p>会员服务 </p></a>
+				<ul>
+					<a href=""><li class="zh">账号注册</li></a>
+					<a href=""><li class="zh">找回密码</li></a>
+					<a href=""><li class="zh">在线客服</li></a>
+					<a href=""><li class="zh">活动领奖</li></a>
+					<a href=""><li class="zh">账户密保</li></a>
+				</ul>
+			</div>
+			   </div>
+			<div id="bj">
+	    	<div id="shang">
+	        	<div id="wz">
+	    		<p style="margin-left: 9px;margin-top: 7px;color: white;">本游戏适合全年龄段人群</p>
+	    	</div>
+	        		   <a href="#"><div id="kk">
+	    		</div></a>
+	    	<div id="caidan">
+	    		
+	    		<ul>
+	    			<a href="#"><li class="bjdw">
+	    				<ul class="bj1">
+	    					<li class="xz1">新闻中心</li>
+	    					<li class="xz1">活动中心</li>
+	    					<li class="xz1">tgp联赛</li>	
+	    				</ul>
+	    			</li> </a>
+	    			<a href="#"><li class="bjdw1">
+	    				<ul class="bj1">
+	    					<li class="xz1">游戏介绍</li>
+	    					<li class="xz1">新手上路</li>
+	    					<li class="xz1">游戏特色</li>	
+	    					<li class="xz1">游戏道具</li>	
+	    					<li class="xz1">游戏角色</li>	
+	    					<li class="xz1">赛车介绍</li>	
+	    					<li class="xz1">主题赛道</li>
+	    				</ul>
+	    			</li></a>
+	    			<a href="#"><li class="bjdw2">
+	    				<ul class="bj1">
+	    					<li class="xz1">车队排行</li>
+	    					<li class="xz1">车队名人堂</li>
+	    					<li class="xz1">车队活动</li>
+	    					<li class="xz1">车队说明</li>
+	    					
+	    				</ul>
+	    			</li></a>
+	    			<a href="#"><li class="bjdw3">
+	    				<ul class="bj1">
+	    					<li class="xz1">个人信息</li>
+	    					<li class="xz1">玩家截图</li>
+	    					<li class="xz1">视频专区</li>	
+	    					<li class="xz1">游戏壁纸</li>	
+	    					
+	    				</ul>
+	    			</li></a> 
+	    			<a href="#"><li class="bjdw4"></li></a> 
+	    			<a href="#"><li class="bjdw5"></li></a>
+	    	   </ul>
+	    	</div>
+	    	<a href="#"><div id="yb">
+	    	</div></a>
+	        <div id="lb1">
+	     <img id="lb" src="img/lb1.png"/>
+	        </div>
+	        
+	    	</div>
+	  
+	    	<!--院兴-->
+		<div id="zhongbu">
+			<div id="zhongbuzuo">
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>全新章鱼萌宠登场！《跑跑卡丁车》2017粉色齿轮上市!</h3></a>
+						<p>发布时间：</p><p class="neirong1">03/08</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>3月注定是粉红色甜甜蜜蜜的季节，先有女生节，后有白色情人节，在《跑跑卡丁车》你将邂逅2017新款粉色齿轮，而全新的粉色、蓝色章鱼也前来卖萌。对了，悄悄告诉你们，在情人节可别忘了收集巧克力，各种活动很精彩哦！</p>
+						<a href="#">更多>></a>
+					</div>
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>糖心橙子9登场！《跑跑卡丁车》3月超值礼包火爆上架！</h3></a>
+						<p>发布时间：</p><p class="neirong1">03/01</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu1.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>又到了草长莺飞、万物复苏的3月了，在这个暖暖的缤纷色春天，记得来《跑跑卡丁车》体验本周的更新内容哦！3月超值大礼包、大富翁迷你游戏、像素宝石组合活动、角色齿轮限时更新，快来看看吧！</p>
+						<a href="#">更多>></a>
+					</div>
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>鸟型座驾尖叫登场！《跑跑卡丁车》早春钜惠潮来袭！</h3></a>
+						<p>发布时间：</p><p class="neirong1">02/22</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu2.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>寒冬正离我们一步步远去，早春的气息悄然扑面。在像素村的探险中，一种奇特的鸟型座驾引起了皮蛋一行人的兴趣。驾驶飞鸟，奔赴赛场到底会是如何新奇的体验？让我们一起在本周更新中寻找答案吧！</p>
+						<a href="#">更多>></a>
+					</div>
+					
+					
+					
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>麦迪娅礼包限时发售！像素世界二次更新！</h3></a>
+						<p>发布时间：</p><p class="neirong1">02/15</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu3.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>像素世界给车手们带来了耳目一新的漂移体验，而本次二次更新更是新料不断。除了女巫麦迪娅的闪亮登场，还有全新的道具赛道、像素小屋及海量福利活动，就让我们来一探究竟吧！</p>
+						<a href="#">更多>></a>
+					</div>
+					
+					
+					
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>节后狂欢启动！钓鱼模式欢乐再临！</h3></a>
+						<p>发布时间：</p><p class="neirong1">02/09</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu4.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>春节长假刚过，你是否还沉溺于节后综合症无法自拔呢？打起精神，一起来繁荣山丘的鱼塘吧！超多像素齿轮疯狂放送，还有情人节专属活动等着你哟！</p>
+						<a href="#">更多>></a>
+					</div>
+					
+					
+					
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>新春吉祥如意！《跑跑卡丁车》Bingo福利滚滚来！</h3></a>
+						<p>发布时间：</p><p class="neirong1">01/26</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu5.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>新春佳节在即，《跑跑卡丁车》在此先给大家拜年啦！祝愿所有车手鸡年好运来，车技更高超！继新主题“像素世界”上线之后，本周的繁荣山丘又迎来了新春福利狂欢。幸运白色宝石1+1活动限时开启，showtime好礼天天送，还有更多活动等你来参与！</p>
+						<a href="#">更多>></a>
+					</div>
+					
+					
+					
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>不要方，一起FUN！《跑跑卡丁车》像素世界逗趣开篇！</h3></a>
+						<p>发布时间：</p><p class="neirong1">03/08</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu6.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>新年伊始，《跑跑卡丁车》最新篇章“像素世界”终于正式开启。在像素的世界中，皮蛋、黑妞和宝宝变成了呆萌搞笑的像素人，就连赛车都变成了像素的造型，一切就像梦境般不可思议。究竟这里发生过什么？神秘人物为何突然发起偷袭？他们又能变回原来的模样吗？快来一探究竟吧！</p>
+						<a href="#">更多>></a>
+					</div>
+					
+					
+					
+				</div>
+				<div id="zhongbuzuo1">
+					<div id="zhongtopneirong">
+						<a href="#"><h3>豪礼从天降！像素宝宝呆萌登场！</h3></a>
+						<p>发布时间：</p><p class="neirong1">01/12</p>
+					</div>
+					
+					<div id="zhongtopneirongtu">
+						<a href="#zhongbuzuo"><img src="img/shangpintu.jpg"/></a>
+					</div>
+					<div id="zhongtopneirongwen">
+						<p>对于即将开启的“像素世界”，繁荣山丘的全体小伙伴都表示翘首以盼。而就在本周，萌主宝宝也变成了方头方脑的像素宝宝呆萌亮相，快来学习正确的入手姿势吧！</p>
+						<a href="#">更多>></a>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+				
+				
+				
+			</div>
+			<div id="zhongbuyou">
+				<div id="zhongbuyoudeng">
+					<ul>
+					<a href="mimadenglu.html"><li class="ding1" ></li></a>
+					</ul>
+				</div>
+				<div id="zhongbuyouzhu">
+					<ul>
+						
+					<a href="#"><li class="ding2" ></li></a>
+				
+					</ul>
+				</div>
+				<div id="zhongbuyoukefu">
+				<a href="#"><li class="ding3" ></li></a>
+				</div>
+				<div id="zhongbuyouanquan">
+					<ul>
+					<a href="#"><li class="ding4" ></a>
+				
+					</ul>
+				</div>
+				<div id="zhongbuyouchong">
+					<ul>
+				<a href="#"><li class="ding5" ></li></a>
+				</ul>
+				</div>	
+				<div id="zhongbuzhangyu">
+					<div id="zhangyutu">
+						<img id="zhangyutu1" style="width: 240px;height: 160px;margin-left: 5px;margin-top: 5px;"  src="img/zhongyoulunbo1.jpg"/>
+					</div>
+					<div id="zhangyutu2">
+						<img id="zhangyutu3" style="margin-left: 5px;" src="img/diceng1.jpg"/>
+					</div>
+					
+				</div>
+				<div id="zhongbuxinshou">
+					<ul>
+					<a href="#"><li class="zhongbuxinshou1" ></li></a>	
+					</ul>
+				</div>
+				<div id="zhongbuzhanghu"><a href="#"><img src="img/zhongyou1.jpg"/></a>	</div>
+				<p style="font-size: 16px;font-weight: 600;color:#666666;margin-left:4px;">游戏排行</p>
+				<p style="float: left;margin-left:170px;margin-top: -21px;" ><select name="网区"><option>电信区</option><option>网通区</option></select></p>
+				<div id="zhongbupaihangzi">
+					<div id="zhongbupaihangzitop">
+						<ul>
+							<a href="#"><li class="saiche" style="margin-left: 7px;">赛车</li></a>
+							<a href="#"><li class="paihang">排行榜</li></a>
+							<a href="#"><li class="huizhang">徽章</li></a>
+						</ul>
+					</div>
+					<div id="zhongbupaihangzixia">
+						<table  cellspacing="3" cellpadding="10">
+							<tr style="height: 30px; text-align: center; background-color: #F0F0F0;" ><th style="font-size: 14px;width:42px ;font-weight: 100;">排名</th>
+								<th style="width:110px;font-weight: 100;font-size: 14px;">昵称</th>
+								<th style="width:87px ;font-weight: 100;font-size: 14px;">经验 </th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td title="丨丶她丨" >丨丶她丨</td>
+								<td>650</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td title="丨彡俗丨" >丨彡俗丨</td>
+								<td>647</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td title="Xshy丶猪猪c" >Xshy丶猪猪c</td>
+								<td>646</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td title="丨左爷丨" >丨左爷丨</td>
+								<td>645</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td title="丨争魁丨" >丨争魁丨</td>
+								<td>644</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td title="丨丶七丨" >丨丶七丨</td>
+								<td>641</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td title="宋美怡出售号" >宋美怡出售号</td>
+								<td>641</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td title="丨老舅丨" >丨老舅丨</td>
+								<td>638</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td title="冫思慕" >冫思慕</td>
+								<td>638</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td title="丨九帝丨" >丨九帝丨</td>
+								<td>636</td>
+							</tr>
+						</table>
+					</div>
+					
+					
+				</div>
+				<div id="zhongbupaixia">
+					<ul style="float: left;" >
+						<li title="17173百科" class="zhongbupaixiazi1" style="margin-left: 8px;'" >17173百科</li>
+						<li title="新浪爱问" class="zhongbupaixiazi2" >新浪爱问</li>
+						<li title="网易攻略" class="zhongbupaixiazi3" >网易攻略</li>
+						
+					</ul>
+					<div id="zhongbupaixia1" style="font-size: 13px;line-height: 23px;" >
+						
+							<a href="#"><p title="什么车是最好的？" >  什么车是最好的？</p> </a>  <p class="jiejue" > 10  解决中</p></a>
+							<a href="#"><p title="跑跑卡丁车客户端输入帐号" >  跑跑卡丁车客户端输入帐号</a></p>   <p class="jiejue" > 2 解决中</p></a>
+							<a href="#"><p title="打不开怎么办" >  打不开怎么办  </p>  </a>   <p class="jiejue" >  0   解决中</p></a>
+							<a href="#"><p title="  打不开怎么办？" >	  打不开怎么办？   </p> </a>   <p class="jiejue" > 0   零回答</p></a>
+							<a href="#"><p title="跑跑卡丁车竞速赛什么车最" >  跑跑卡丁车竞速赛什么车最</p> </a>   <p class="jiejue" >  1  已解决</p></a>
+							<a href="#"><p title="跑跑卡丁车什么车最好2014 " >	  跑跑卡丁车什么车最好2014 </p></a> <p class="jiejue" > 1  已解决</p></a>
+							<a href="#"><p title="跑跑卡丁车，道具车最佳改 " >  跑跑卡丁车，道具车最佳改  </p></a>  <p class="jiejue" > 1  已解决</p></a>
+						
+					</div>
+				</div>
+				
+				<div id="zhongbupaixia">
+					<a href="#"><img style="margin-left: 5px;margin-top: 10px;" src="img/zhongyou2.jpg"/></a>	
+					<img style="margin-left: 5px;margin-top: 5px;border-radius:6px ;"  id="zhongbupaixiatu" src="img/xinshou1.jpg"/>
+				</div>
+				<div id="zhongbupaixiaxiaotu">
+					<img style="margin-left: 5px;margin-top: 5px;"  id="zhongbupaixiaxiaotu1"  src="img/mojiashidai1.jpg"/>
+				</div>
+				<div id="zhongbujiazhang">
+					<p style="font-size: 15px;margin-left: 5px;color:#B5B5B5;" >家长监护服务中心</p>
+					<ul>
+						<li class="zhongbuwangyou"></li>
+						<li class="zhongbushiming"></li>
+					</ul>
+					
+				</div>
+				<div id="zhongbuhehuo">
+					<p style="font-size: 15px;margin-left: 5px;color:#B5B5B5;">合作伙伴</p>
+					<select style="margin-left: 5px;margin-top: 5px;width: 116px;background-color: #E0E0E0;text-align: center;" name="媒体">
+						<option>合作媒体</option>
+						<option>17173</option>
+						<option>新浪游戏频道</option>
+						<option>太平洋游戏网</option>
+						<option>52pk</option>
+						<option>爱拍</option>
+						<option>游久网</option>
+						<option>电玩巴士</option>
+					</select>
+					<select style="margin-left: 5px;margin-top: 5px;width: 106px;background-color: #E0E0E0;text-align: center;"  name="专区">
+						<option>合作专区</option>
+						<option>17173</option>
+						<option>766</option>
+						<option>太平洋游戏网</option>
+						<option>52pk</option>
+						<option>游久网</option>
+						<option>电玩巴士</option>
+					</select>
+					
+				</div>
+			
+			
+			</div>
+			<div id="zhongbuditu" >
+		<img style=" margin-top: 20px; margin-left: 20px;" src="img/zhongdi.png"/>
+			
+		</div>
+		</div>
+	     </div>
+	  <!--梁东妮-->
+	  <div id="bottm">
+		<div id="bottm1">
+			<div id="bottm2">
+				<div class="bottm-left">
+					<div id="left1"></div>	
+					<div id="left2">
+						<p><a class="sjtc" href="#">世纪天成</a>&nbsp;丨&nbsp;上海邮通科技有限公司&nbsp;&nbsp;&nbsp;版权所有</p>
+					    <p>上海市徐汇区钦州北路1066号74号楼3楼　邮编：200233</p>
+					    <p>不良信息举报电话：021-34144567</p>
+					    <div id="left2-1"></div>					    
+					</div>
+				</div>
+			    <div class="bottm-left bottm-right">
+			    	<a href="#" class="db2" title="不良信息举报中心"><img src="img/db2.png"/></a>
+			    	<div id="db3"><img src="img/db3.png"/></div>
+			    	<a href="#" class="db4" title="网络社会征信网"><img src="img/db4.png"/></a>
+			    	<div id="lu">
+			    		<a href="#"><p class="lu1" title="沪网文[2013]0288-024">沪网文[2013]0288-024</p></a>
+			    		<a href="#"><p class="lu1" title="沪ICP证 B2-20040070">沪ICP证 B2-20040070</p></a>
+			    		<a href="#"><p class="lu1" title="新出网证(沪)字017号">新出网证(沪)字017号</p></a>
+			    	</div>	
+			    	<div id="db6">
+			    		<span class="span1">新出音管</span>
+			    		<i class="i1">[2006]061</i>
+			    		<span class="span1">文网测字</span>
+			    		<i  class="i1">[2007]10号</i>
+			    		<span class="span2">电出字</span>
+			    		<i>024-2009-04</i>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+	
+	
+		</div>
+		<script type="text/javascript">
+			var y=1;
+			var lb=document.getElementById("lb");
+       		function jia(){
+				y++;
+				if(y==9){y=1};
+				lb.src="img/lb"+y+".png";	
+			}
+			setInterval(jia,1500);
+			
+		</script>
+		<script type="text/javascript">
+			var x=1
+			var zhangyutu1=document.getElementById("zhangyutu1")
+			var zhangyutu3=document.getElementById("zhangyutu3")
+			var zhongbupaixiatu=document.getElementById("zhongbupaixiatu")
+			var zhongbupaixiaxiaotu1=document.getElementById("zhongbupaixiaxiaotu1")
+		function jia(){
+				x++;
+				if(x==5){x=1};
+				zhongbupaixiatu.src="img/xinshou"+x+".jpg"
+				zhangyutu3.src="img/diceng"+x+".jpg";
+				zhangyutu1.src="img/zhongyoulunbo"+x+".jpg";
+				zhongbupaixiaxiaotu1.src="img/mojiashidai"+x+".jpg"
+		}
+			setInterval(jia,2000)
+			
+			
+		</script>
+	
+	</body>
+</html>
+					

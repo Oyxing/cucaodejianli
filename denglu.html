@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<style type="text/css">
+			*{padding: 0;margin: 0;list-style: none;}
+			body{background-color:#F1F1F1 ;}
+		#top{height: 65px;background-color: black;}
+		#top img{float: left;margin-top: 14px;margin-left: 200px;}
+		#top p{float: left; font-size: 30px;font-weight:500;color:white;line-height: 71px;}
+		#top1{width:980px ;height: 32px;margin: 20px auto;}
+		#topdianhua{ background: url(img/tupian.png)no-repeat 0 -99px;width: 140px;height: 32px;}
+		.topdianhua{background: url(img/tupian.png)no-repeat;width: 140px;height: 32px;display: none;}
+		#topdianhua:hover .topdianhua{display: block;}
+		#topyouxiang{float: left; background: url(img/tupian.png)no-repeat -150px 0px;width: 140px;height: 32px;margin-left: 140px;margin-top: -32px;}
+		.topyouxiang{float: left; background: url(img/tupian.png)no-repeat -150px -99px;width: 140px;height: 32px;display: none;}
+		#topyouxiang:hover .topyouxiang{display: block;}
+		
+		.biaodi{width: 988px;height: 1250px;background-color: white;margin: 10px auto;}
+		#top1 .yiyou{margin-left: 840px;height: 32px;margin-top: -34px;font-size: 14px;}
+		#top1 p a{color: red;font-weight: bold;text-decoration: none;line-height: 32px;}
+		#top1 p a:hover{text-decoration: underline;}
+		.biaodi h3{float:left ; font-size: 36px;margin-left: 99px;margin-top: 30px;}
+		.biaodi p{float: left; font-size: 13px;color: #999999;width: 790px;height: 60px;margin-left:99px ;margin-top: 15px;}
+		#xian{float: left; width:790px;height: 1px;background-color: #9E9E9E;margin-top: 15px;margin-left: 99px;}
+		.biaodi h2{float: left;font-size: 16px;margin-left: 99px;margin-top: 30px;}
+		.biaodi .guojia{ width: 160px;height: 36px;margin-left: 74px;}
+		.biaodi p .shoujihao {width: 160px;height: 36px;margin-left: 60px;}　
+		#xian1 {width:1100px;height: 1px;background-color: #9E9E9E;margin-top: 30px;margin-left: 99px;}
+		
+		.youxiang{width: 988px;height: 1250px;background-color: white;margin: 10px auto;display: none;}
+		.youxiang h3{float:left ; font-size: 36px;margin-left: 99px;margin-top: 30px;}
+		.youxiang p{float: left; font-size: 13px;color: #999999;width: 790px;height: 60px;margin-left:99px ;margin-top: 15px;}
+		.youxiang h2{float: left;font-size: 16px;margin-left: 99px;margin-top: 30px;}
+		.topyouxiang:hover .youxiang{display: block;}
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<img src="img/logo2.png"/>
+			<p>|华为商城</p>
+		</div>
+		<div id="top1">
+			<div id="topdianhua">
+				<ul>
+					<a href="denglu.html"><li class="topdianhua"></li></a>
+				</ul>
+				
+					<p class="shouji" style="width: 70px;height: 32px;font-size: 15px;  margin-top: 10px;margin-left: 10px;"  >手机号</p>
+			</div>
+			<div id="topyouxiang">
+				<ul>
+					<a href="denglu1.html"><li class="topyouxiang" ></li></a>
+				</ul>
+				<p class="dianzi"style="width: 70px;height: 32px;font-size: 15px;" >电子邮箱</p>
+			</div>
+			<p class="yiyou">已有华为账号<a href="zhuce.html">登陆</a></p>
+		</div>
+		<div class="biaodi">
+			<h3>注册华为帐号</h3>
+			<p>华为帐号是您用于访问所有华为服务的帐号。使用华为帐号登录后，您将可以使用云服务、华为商城、花粉俱乐部、应用市场、EMUI产品、开发者联盟，及更多服务。</p>
+			<div id="xian"></div>	
+			<h2>华为帐号</h2>
+			<p>输入手机号作为您的华为帐号，用于登录、重设密码、验证身份。</p>
+			<p class="shoujihao">手机号： 
+			 	<select class="guojia" style="text-indent: 20px;" >
+			 	<option value="">中国</option>
+				<option value="">美国</option>
+				<option value="">英国</option>
+			 	</select>
+			 	<input type="text"class="shoujihao"placeholder="输入手机号" style="text-indent: 20px;"/></p>     
+			<p> 验证码 : <input type="text" style=" text-indent:20px;width: 160px;height: 36px;margin-left: 80px;" placeholder="短信验证"/>
+						<input type="button"style="text-indent: 20px;width: 160px;height: 36px;margin-left: 60px;background-color:#F2F2F2;font-size: 15px;border-radius: 5px;outline: none;"  value="获取验证码"/></p>
+			<div id="xian"></div>
+			<h2>设置登录密码</h2>
+			<p>密码由8-32位字符组成，需至少包含一个大写字母、一个小写字母和一个数字，建议不与其他密码相同</p>
+			<p> 密码：<input type="password"style="text-indent:10px;width: 250px;height: 36px;margin-left: 90px;"placeholder="8~31字符"/></p> 
+			<p>确认密码：<input type="password"style="text-indent:10px;width: 250px;height: 36px;margin-left: 65px;"placeholder="8~31字符"/></p>
+			<div id="xian"></div>
+			<h2>华为帐号服务条款</h2>
+			<p><h2 style="margin-top: -60px;font-size: 14px;">国家/地区</h2></p>
+			<h1 style="float: left; margin-top: -60px;font-size: 14px;">中国</h1>
+			<p style="margin-top: -85px;">正在注册中国华为帐号</p>
+			<div id="xian"></div>
+			<p style="margin-top: 20px;color: black;font-size: 10px;">华为将为您创建唯一的华为帐号，来标识您和提供更优服务，且需搜集和处理以下信息：</p>
+			<p style="margin-top: -40px;margin-left:114px;color: black;">您所有登录的设备信息，包括：IMEI、IMSI、SN、国家/地区、语言、型号和版本号；</p>
+			<p style="margin-top: -40px;margin-left:114px;font-size:10px;color: black;">您向我们提交的个人信息，包括：手机号、邮件地址、密码、头像、昵称、生日、姓名和性别；</p>
+			<p style="margin-top: -40px;color: black;font-size: 10px;">上述数据将会传输并保存至华为全球的服务器。您可通过销户删除所有个人数据。</p>
+			<p style="margin-top: -40px;color: black;font-size: 10px;">华为帐号用户可以通过手机号或邮件地址搜索到您，并可查看您的公开信息，包括：头像、昵称、城市等。您也可以在华为帐号的设置中关闭。</p>
+			<p style="margin-top: -40px;color: black;font-size:10px ;">点击“注册”，即表示您同意上述内容及 <a href="#" style="color: cornflowerblue;">华为帐号用户协议</a>并确认您已阅读<a href="#" style="color: cornflowerblue;">华为隐私政策。</a></p>
+			<div id="xian"></div>
+			<p><a href="zhuce.html"><input type="button" style="margin-left:265px;width: 250px;height: 50px;border-radius: 10px;background-color: #999;outline: none;font-size: 18px;color:white;"value="立即注册"/></a></p>
+		</div>
+		<div class="youxiang">
+			<h3>注册华为帐号</h3>
+			<p>华为帐号是您用于访问所有华为服务的帐号。使用华为帐号登录后，您将可以使用云服务、华为商城、花粉俱乐部、应用市场、EMUI产品、开发者联盟，及更多服务。</p>
+			<div id="xian"></div>
+			<h2>华为帐号</h2>
+			<p>输入邮箱地址作为您的华为帐号，用于登录、重设密码、验证身份。</p>
+			<p>邮箱地址：<input type="text"placeholder="3~50个字符"style="text-indent:10px;width: 340px;height: 36px;margin-left: 60px;" /></p>
+			<p> 验证码 : <input type="text" style="text-indent:10px;width: 160px;height: 36px;margin-left: 77px;" placeholder="邮箱验证"/>
+					<input type="button"style="width: 160px;height: 36px;margin-left: 11px;background-color:#F2F2F2;font-size: 15px;border-radius: 5px;outline: none;"  value="获取验证码"/></p>
+			<div id="xian"></div>
+			<h2>设置登录密码</h2>
+			<p>密码由8-32位字符组成，需至少包含一个大写字母、一个小写字母和一个数字，建议不与其他密码相同</p>
+			<p> 密码：<input type="password"style="text-indent:10px;width: 250px;height: 36px;margin-left: 90px;"placeholder="8~31字符"/></p> 
+			<p>确认密码：<input type="password"style="text-indent:10px;width: 250px;height: 36px;margin-left: 65px;"placeholder="8~31字符"/></p>
+			<div id="xian"></div>
+			<h2>华为帐号服务条款</h2>
+			<p><h2 style="margin-top: -60px;font-size: 14px;">国家/地区</h2></p>
+			<h1 style="float: left; margin-top: -60px;font-size: 14px;">中国</h1>
+			<p style="margin-top: -85px;">正在注册中国华为帐号</p>
+			<div id="xian"></div>
+			<p style="margin-top: 20px;color: black;font-size: 10px;">华为将为您创建唯一的华为帐号，来标识您和提供更优服务，且需搜集和处理以下信息：</p>
+			<p style="margin-top: -40px;margin-left:114px;color: black;">您所有登录的设备信息，包括：IMEI、IMSI、SN、国家/地区、语言、型号和版本号；</p>
+			<p style="margin-top: -40px;margin-left:114px;font-size:10px;color: black;">您向我们提交的个人信息，包括：手机号、邮件地址、密码、头像、昵称、生日、姓名和性别；</p>
+			<p style="margin-top: -40px;color: black;font-size: 10px;">上述数据将会传输并保存至华为全球的服务器。您可通过销户删除所有个人数据。</p>
+			<p style="margin-top: -40px;color: black;font-size: 10px;">华为帐号用户可以通过手机号或邮件地址搜索到您，并可查看您的公开信息，包括：头像、昵称、城市等。您也可以在华为帐号的设置中关闭。</p>
+			<p style="margin-top: -40px;color: black;font-size:10px ;">点击“注册”，即表示您同意上述内容及 <a href="#" style="color: cornflowerblue;">华为帐号用户协议</a>并确认您已阅读<a href="#" style="color: cornflowerblue;">华为隐私政策。</a></p>
+			<div id="xian"></div>
+			<p><input type="button" style="margin-left:265px;width: 250px;height: 50px;border-radius: 10px;background-color: #999;outline: none;font-size: 18px;color: white;"value="立即注册"/></p>
+			
+		</div>
+		<div id="xian1"></div>
+		<p style="margin-top: 20px;color:#B0B0B9;font-size: 15px;margin-left: 510px;" > <a href="#" style="color:#B0B0B9 ;">华为隐私政策 </a>&nbsp;&nbsp;&nbsp;<a href="#" style="color:#B0B0B9 ;">华为帐号用户协议</a>|常见问题</p>
+		<p style="margin-top: 20px;color:#B0B0B9;font-size: 15px;margin-left: 270px;">Copyright @ 2011-2017  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9</p>
+	</body>
+</html>
